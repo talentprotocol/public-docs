@@ -4,46 +4,27 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Talent Protocol Official Documentation',
+    svgSrc: require('@site/static/img/docs.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        This is the official documentation for Talent Protocol, a platform designed to help individuals build and showcase their professional talents.
+        Here, you will find comprehensive guides, tutorials, and resources to get started and make the most of the platform.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({svgSrc, title, description}) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={svgSrc} className={styles.featureSvg} role="img" alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
+        <a href="/docs" className="button button--primary">Get Started</a>
       </div>
     </div>
   );
