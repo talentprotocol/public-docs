@@ -71,6 +71,7 @@ const config = {
         breadcrumbs: true,
         routeBasePath: "/docs",
         sidebarPath: "./sidebars.js",
+        docItemComponent: "@theme/ApiItem",
       },
     ],
     [
@@ -89,6 +90,23 @@ const config = {
       ({
         customCss: "./src/css/custom.css",
       }),
+    ],
+    [
+      "docusaurus-plugin-openapi-docs",
+      {
+        id: "api",
+        docsPlugin: "@docusaurus/plugin-content-docs",
+        docsPluginId: "default",
+        config: {
+          talentProtocolApiV2: {
+            specPath: "https://api.talentprotocol.com/api-docs/v3/swagger.json",
+            outputDir: "docs/developers/talent-api/api-reference-v2",
+            sidebarOptions: {
+              groupPathsBy: "tag",
+            },
+          },
+        },
+      },
     ],
   ],
 
@@ -125,6 +143,8 @@ const config = {
   //     }),
   //   ]
   // ],
+
+  themes: ["docusaurus-theme-openapi-docs"],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */

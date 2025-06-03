@@ -1,0 +1,71 @@
+---
+id: get-the-score-of-farcaster-accounts
+title: "Get the score of farcaster accounts"
+description: "Get the score of farcaster accounts"
+sidebar_label: "Get the score of farcaster accounts"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VsFuGzcQ/RViTi2wlpympz3VKNLUNQobjYLWsAV5TM5KjLnkhpyVowr692K4klayN7HbQ32xvTOceRy+98g1MM4TlDfwC0aNiSnCtIAGI9bEFCW0Bo81QQmVNQkKsB5K+NxSXEEBkT63NpKBkmNLBRhKOtqGbZCsn0Ndo0ok9ZiMcjaxCpWqds2UNWmkLr1bqSYky3ZJynqmOcWkMJJCralhMiP1O35Rb05PlaA4DkEBSS+oRijXwKtGsCaO1s9hsyn28JMOkeIsuXb+dBfHqCcLUpIlSFn+zgsVB1VZJ6D3H1/Z+a+Ts6vzk4t317u+C0JD8Vnj69BGNUFHntVVDBx0cOrs6lw90NCsv956KsmpCT5RkvgPp6fy67jbe+JuF3KoOngmz5KFTeOsRskaf0qSun7eKtx/Is1QQBNDQ5Ft12hbr8/DGFGwW6Y6vby+CdbzYd6WDINn1CUfnRJsCnCYeKbR6dYJ6WbIfb2b3YwK8K1zwvUqxFpSwCDTCduaBptJIDHWjfR7XJDvm6pHTEq6qr6rANmzfGbN81MaanKoiyf72v0U8OPpm+eH2XpseRGi/ZuMEqJQYuHgwJn3uI+UiFqHVoZfQE28CAZKmFM+IuQFlDDe5473tEkUlzuXaKMTajM3qRyP14YqbB3/GhJvoIAlRov3rjvmg9jBv0KXxo44C6DZ8n+kQy27n0oz3UbLqw9Cxq4QNnYm4jggXGMvslpe0J7Mxvoq5KWWneSeXZ0LUoqpm9by7cAp2aRsykMUZZqg25o8Z7moKnTmMKRhoUVita0+uvXnnil6dG5VKJay25CUj1RRjGTEdDCp5dvRrb/1k21TdC48JomJPCJqVo+WF4OtG4csFFe2Y2wVZLH1c1UHQ6mUuie56gWt8rdSXYdWNZiSQr+PCAp0Le1o2Y1R3e3ne5extrwgz2IfNLr1UsjTbhsPeT4HNTkMQmbCeiSoPibhZV9ShnOAMIalNaRQ/fbnRHF4IP9VlGdbceQad6NulP0ym1S4Z7SejLpfiYydTEgqkDfZZ9Td1eWHiRoLnDHVaN1MRvQYopm5MLf+rj+DVnDrSEZwo0ujWw8FMMU6XVYfKC6tpgOpmKDTAOvz97GhJTmxyDTGxp400erOPcSxUWf9ZDhQApNe/DQonwKakLjGbOZbZbzOC47ov1cZ0xceNw6tF6PLyl9vfeKm9718PWanmBawyGK/gfX6HhN9jG6zkc/dFSz+YWwSgzBQVujS07fEur+i4Ls/tjfh9+p/e2EMbjxbz+5dlIkHJYDc/K/fzL96bXwDxfHzpgcz7b0Xypvpptg54H+e+QvPlG9gPDTjo3F14bM874PYs6eI7GZ/O71/N4HN5h+9KL8B
+sidebar_class_name: "get api-method"
+info_path: docs/developers/talent-api/api-reference-v2/api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get the score of farcaster accounts"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/farcaster/scores"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get the score of farcaster accounts
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"fids","in":"query","required":true,"description":"Comma separated list of farcaster ids. Only positive integers are accepted. Max 100 fids are accepted.","schema":{"type":"string"}},{"name":"scorer_slug","in":"query","description":"The slug of the scorer to filter the score","schema":{"type":"string"}},{"name":"X-API-KEY","in":"header","description":"Your Talent Protocol API key","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Get scores","content":{"application/json":{"schema":{"type":"object","properties":{"scores":{"type":"array","items":{"type":"object","properties":{"points":{"type":"integer","description":"The points of the score"},"last_calculated_at":{"type":["string","null"],"format":"date-time","description":"The timestamp of when the score was last calculated"},"farcaster_id":{"type":"string","description":"The farcaster id of the score"}}}}}}}}},"401":{"description":"unauthorized request"}}}
+>
+  
+</StatusCodes>
+
+
+      

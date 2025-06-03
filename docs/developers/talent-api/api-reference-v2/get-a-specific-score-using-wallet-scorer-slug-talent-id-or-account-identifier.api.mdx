@@ -1,0 +1,71 @@
+---
+id: get-a-specific-score-using-wallet-scorer-slug-talent-id-or-account-identifier
+title: "Get a specific score using wallet, scorer slug, talent id or account identifier"
+description: "Get a specific score using wallet, scorer slug, talent id or account identifier"
+sidebar_label: "Get a specific score using wallet, scorer slug, talent id or account identifier"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVk1vIzcM/SsCTy0wsdNuT3NqgF1s0xw2aLJog8RwaInj0a5GmpU4Tl3D/72gZvxVO0m3XV9sixL5RD4+cQWM8wTlPdzoECnBpIAWIzbEFGV9BR4bghKsgQKshxK+dBSXUIChpKNt2QZZvUVHntXl20I9oXPECo2JlJIKUaHWofOsrCHPtrIUoYBIXzobyUDJsaMCkq6pQShXwMtWQiaO1s9hvS62KAZH0xS6qOmfiJ7zUAD5rpFbVhg1Js7x55brbgYF9Hhhsj66U02qj6RCpbimzUVgD1KSxMVpct38lQyJN9fNN776g4qDqqxj+bVZHKm3VGHnWNmUV2eddYZibx0Ojl648H7K/ji7uL48u3p3t0FXE5qcgEN4d6GLaqjidQwcdHDq4vpSfablV1VrIptTG3yiJPYfz8/l6zDae+LhNl2yfq629IECdPBMnuUQtq2zGuXQ+FOSk6vjyGH2iTRDAW0MLUW2fdzs/vVtbbCe094+65nmJxIk9es3H1QQ1gU4TDzV6HTnkMlMkXf+7ncs9J1z0mFViI1sAYNMZ2wbOhlMDImxaSXeU01+F1Q9YVISVe2iwnr4FPDT+Q/HKe88dlyHaP8io6SclFiYcqIyqFJL2lZWHxSpb5Riw1whc6G4r5w1zzZ6Q1wHAyXMKacfuYYSxn32CkgUFxux6aIThjK3qRyPV6Zvg19C4jUUsMBoceb6uu3Z9v6KRrR21INqBxqPdGgkOxMJprtoeXkjJOodYWunwvEdA7C1V5n0r7SQJM/6KuSjlp3svbi+FKQUU5/OxZsTtbVp09nSYCboriHPmeaqCr0SnGpFqXNiNXgfPfhLzxQ9OrcsFIvbwSTuI1UUIxlRGExq8Wb04B/87RAUnQtPSWzC94ia1ZPl+mTo1iELZ5XtKVgFOSyMaIKhVIrfs+z1ipZ5rVR3oVMtpqTQby2CAl23VdM+jepxm9/HjLXjWtijkWn04MWRp801Puf87PnkcBIyEzYjQfUxUdx3KcnZQxjDwhpSqH79/VZx+Ez+WZQXQ/dkH4+jPpW7YzapMGO0noyaLaUvnWRIPJA3WTjU4/WHm1s1FjhjatC6qaToKUQzdWFu/eOuBp3g1pFyI6FLowcPBTDFJn2obigurKa9VjFBpxOsz+tjQwtyonlpjK09a6PVvSCJ0qLO/ZPhQAlMuv75ZPsU0IbEDWYRHjrj24vFQatsO5LpTx63Dq0Xuc0qsRqE5H4Q+kkBddaCe1itZpjoY3TrtSz3z7HIi7FJ9MNAWaFLdBRt+/LAd78N79336usnm5Ogs8T0Y1SmF5SQx4h/j+n5ceTFkEcz0/8J/23nlxdQH45VO8iT3TMA5b3MbIMY/+f6vjL4vIBx/104SGpvvtCaWt6zHU0zcpvt6/j+3S2s138DbIcG1A==
+sidebar_class_name: "get api-method"
+info_path: docs/developers/talent-api/api-reference-v2/api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get a specific score using wallet, scorer slug, talent id or account identifier"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/score"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get a specific score using wallet, scorer slug, talent id or account identifier
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","in":"query","description":"Talent ID, wallet address or account identifier","required":true,"schema":{"type":"string"}},{"name":"account_source","in":"query","schema":{"type":"string","enum":["farcaster","github","wallet"]},"description":"The source of the account"},{"name":"scorer_slug","in":"query","description":"The slug of the scorer to filter the score. Default is the builder score scorer.","schema":{"type":"string"}},{"name":"X-API-KEY","in":"header","description":"Your Talent Protocol API key","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Get score using Talent ID","content":{"application/json":{"schema":{"type":"object","properties":{"score":{"type":"object","properties":{"points":{"type":"integer","description":"The points of the score"},"last_calculated_at":{"type":["string","null"],"format":"date-time","description":"The timestamp of when the score was last calculated"}}}}}}}},"401":{"description":"unauthorized request"}}}
+>
+  
+</StatusCodes>
+
+
+      

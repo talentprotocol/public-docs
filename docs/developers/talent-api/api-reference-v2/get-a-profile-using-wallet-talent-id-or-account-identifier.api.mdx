@@ -1,0 +1,71 @@
+---
+id: get-a-profile-using-wallet-talent-id-or-account-identifier
+title: "Get a profile using wallet, talent id or account identifier"
+description: "Get a profile using wallet, talent id or account identifier"
+sidebar_label: "Get a profile using wallet, talent id or account identifier"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVlFvGzcM/isCnzbgYhfr2z0twIIuK7AGS4qtSAKHlng+NjrpKvGceYH/+8A727HrS7N0fjEsmR8/fhI/8REEFxnKa7hIsWJPGW4LaDFhQ0JJdx4hYENQAjsogAOU8KWjtIICHGWbuBWOunqFnoKY818K84Dekxh0LlHOJiaD1sYuiGFHQbhiSlBAoi8dJ3JQSuqogGxrahDKR5BVqymzJA4LWK+LHYsN0CzHLln6mtFzCAVQ6Bqts8JkMUuff8FSd3MoYOALt+ujmmoyQyYTKyM1bQuBPUp/nZxenJ+8P/u0ZVMTuj7BIdin2CWzUekiRYk2enN6cW7uafUqNW71z7mNIVPW/Z/evNGvw2zvSEw7HKrpMoeFGco1NQbnVTkbg1AQDcW29WxRQ6efs8Y/HueP889kBQpoU2wpCQ/ZN0le/iO7sYM5Frzr2G3l3oKvC5hzfIq/fgIInfd6a4+B5hxHcBzn1uNqNpzeqwA3oUZDR5C5wQXNuuRfCdvHmS75EUwfh2N5JeQ2bATxO+p+pt66azDMbE32vsF0v3e68xg9YRg93srjwkiNYjg4vXSUDR9gG86mSrExfQLNFIOtkcMsc7DfJl/F1KBACQ6FToQbGiWhG1mwabWsh5rCQX7Hrv9dccpiNsmNJAwZbY+yVkfJr5Tx7PfL56QcbHinH6aE6gks1OSXu+bUCC7MsDbXVj9A332+DlOLwK9MYrDCwsjgU9qJz7h3Q1JHByUsqO91lBpKmG7TFpApLbdvSN8UUIu0uZxOHx1V2Hn5NWZZQwFLTIxzP9jE3t7eTxWl5clAq92458TGRuu71WS2SyyrS3WtAQhbnqm17sna8vvea19wbpWKQzX4DYuaG5xenCtTSnkQb/l25GJx1rur6quvu2i7hoIMnVjF1O+MvQBeu0DMBn1yE86DUAro/aoworCbLYVPVFFK5IxEg9ks305uwk242iRF7+ND1j1WDLRiHljq0dStR9GGMTzc/ypqsF6DJjrKpeKe9KjvadWvleZT7EyLORsMux1lgb7bXexBRnO30/eu59pJrfdHW35yExQo0LaM+16fPUyJo5SFsJkoq4+Z0j6kirPHMMUlOzJofvvzyki8p/Asy9NO6pj4nx7jbjJI+RTG2cS5IAdyZr4yFr3fthgF10YOYu4uPlxemanSmVKD7Gcq0UNMbubjgsPd0xl0ytsm6lsJfZ7cqE0KpSZ/qC4pLVkdbtcqLto8cuv79amjJXl9YvMUWz5pE9vBHvRpR9v3T08HShCy9c+j7VNAG7Oo05a7meb/WcNBW+y6T+hvmbYeubfPzTM52Mb1boq4LaDuO/8aHh/nmOlj8uu1Lg8znpqJ46xu4aCs0Gc6yrcbbOCHPzZD1Y/m9ePpKO3eUIZZuL9MUEI/C/53Ts/PlN9MeTT4PqW/fXJQKK91it342HeL9cKo+g2a+5Z6INCwfWottbK3dzR5ajW7p+Xd2RWs1/8C07Fk4w==
+sidebar_class_name: "get api-method"
+info_path: docs/developers/talent-api/api-reference-v2/api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get a profile using wallet, talent id or account identifier"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/profile"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get a profile using wallet, talent id or account identifier
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","in":"query","description":"Talent ID, wallet address or account identifier","required":true,"schema":{"type":"string"}},{"name":"account_source","in":"query","schema":{"type":"string","enum":["farcaster","github","wallet"]},"description":"The source of the account"},{"name":"X-API-KEY","in":"header","description":"Your Talent Protocol API key","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Get profile using github handle","content":{"application/json":{"schema":{"type":"object","properties":{"profile":{"type":"object","properties":{"id":{"type":"string","description":"The uuid of the profile"},"bio":{"type":["string","null"],"description":"The bio of the profile"},"display_name":{"type":["string","null"],"description":"The display name of the profile"},"image_url":{"type":["string","null"],"description":"The image url of the profile"},"location":{"type":["string","null"],"description":"The location of the profile"},"name":{"type":["string","null"],"description":"The name of the profile"},"human_checkmark":{"type":"boolean","description":"The flag that indicates if the profile is from human"},"onchain_since":{"type":["string","null"],"format":"date-time","description":"The timestamp of when the profile did the first onchain transaction"},"ens":{"type":["string","null"],"description":"The ENS name of the profile"},"tags":{"type":"array","items":{"type":"string","description":"A tag describing the profile"}}}}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

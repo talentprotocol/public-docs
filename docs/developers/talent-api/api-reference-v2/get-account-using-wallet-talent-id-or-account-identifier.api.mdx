@@ -1,0 +1,71 @@
+---
+id: get-account-using-wallet-talent-id-or-account-identifier
+title: "Get account using wallet, talent id or account identifier"
+description: "Get account using wallet, talent id or account identifier"
+sidebar_label: "Get account using wallet, talent id or account identifier"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVsFuGzcQ/RViTi2wltympz3VQIPU9SFG7aA1bEMekSMtYy65IWelqIL+PRjuSlpHsp209UUwZznvcWbeI9fAOE9Q3sKZ1qH1nOC+gAYj1sQUJbIGjzVBCdZAAdZDCZ9aiisowFDS0TZsg6xeoyPP6vy3Qi3ROWKFxkRKSYWosEuvrCHPdmYpQgGRPrU2koGSY0sFJF1RjVCugVeNQCaO1s9hsyl2LPpEkxTaqOlrRs9lKIB8W8s5Zxg1Js74c8tVO4UCOr5wvzk4U0WqQ1Jhprii7UFgQOnvk7PL85OLtzdbNhWhyQBPk92ENqq+SpcxcNDBqbPLc/VIq++qxr18nJrgEyWJ/3x6Kj9P0d4RqxS0RZdUm6yfq12DoAAdPJNn2YZN46xG2Tb+mGTv+hA7TD+SZiigiaGhyLZDxu3U7L/EGFGOY5nq9HqGwUAc6dphN/bfH3YE+qF4of19p4snc+DIJxkecjMogHOZJk3foeGcOOsfyVgPBXye8NJyt38ZojM6WC/i+fYBgrD0ZCbJ+iHn2z1p3zonKWch1shQgkGmE7Y1HS2NBBJj3QjUsiI/xFNLTCoDCrIO3pNmMhPkY+X63xB3QILaJoqdZl447CHKdttBBbd/Bfxy+tOhAlqPLVch2n/IKFEXJdn0NYQIZUu5E0o3JIXqJkFZ86yD1cRVMFDCPA9Vg1xBCeOdLGSo4mJrpG104g7MTSrH47WhGbaOfw+JN1DAAqPFqetkMYgN/hV5NXbU8doO6EiHWmpxL2C6jZZXVyLfXqGNnYi/DATa2ItsOK/Yl1TK+lnIWy07+fbs8lyYUkxd7RZvjsyFTcqm3CkxNxN0W5PnbDBqFmKOHLNBh0yJVZ99dOfPPUvnnVsViiVtH5L0kWYUIxnFQWFSizejO3/nr3tQdC4sk8Ss5EDNamm5OgrdOGSZd2W78Z0F2SxzUAdDqZS8JznrBa3yWqluQqsaTEmh30WEBbp2N6ZdGdXDrr4PmWvLlQyQRqbRnZdEnrbHeMz1GeTkcJQyE9YjYfUhURymlOIMGMawsIYUqj/+ulYcHsk/y/Ksl0rO8TDqSrnfZpMKU0bryajpSml0TiokGcibJljP6uHy/dW1GgudMdVo3URKtAzRTFyYW/+w74FIWulIWUvo0uhOPJUp1un97Iriwool7qRigk5Hpj6vjw0tyMmVksbY2JMmWt05itxxqLN+Mh0ogUlXvx6VTwFNSFxjvv56ZfwXZ3giip32mD7zuHFoffZD8YN17xq3+8v0voAqC/8W1uspJvoQ3WYjy907R7zE2CRmYaCcoUt0ALi74OGHP/uHxY/q+59oR3lnP+neg3mWoIT8Hvp2Ts9fiy9CHjz+9vD3ewOF8lZecr2N/etivfJce4Hm0FGfFKgLn2lNDQ9iBy8wOc3uann39ho2my/6Cg9z
+sidebar_class_name: "get api-method"
+info_path: docs/developers/talent-api/api-reference-v2/api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get account using wallet, talent id or account identifier"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/accounts"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get account using wallet, talent id or account identifier
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","in":"query","description":"Talent ID, wallet address or account identifier","required":true,"schema":{"type":"string"}},{"name":"account_source","in":"query","schema":{"type":"string","enum":["farcaster","github","wallet"]},"description":"The source of the account"},{"name":"X-API-KEY","in":"header","description":"Your Talent Protocol API key","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Get socials using Talent ID","content":{"application/json":{"schema":{"type":"object","properties":{"accounts":{"type":"array","items":{"type":"object","properties":{"identifier":{"type":"string","description":"The identifier of the account"},"source":{"type":"string","enum":["wallet","farcaster","lens","self","talent_protocol","github","linkedin","x_twitter","worldcoin"],"description":"The source of the account"},"owned_since":{"type":["string","null"],"format":"date-time","description":"The timestamp of when the account was owned"},"connected_at":{"type":"string","format":"date-time","description":"The timestamp of when the account was connected"},"username":{"type":["string","null"],"description":"The username of the account"}}}}}}}}},"401":{"description":"unauthorized request"}}}
+>
+  
+</StatusCodes>
+
+
+      

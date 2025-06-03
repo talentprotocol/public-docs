@@ -1,0 +1,71 @@
+---
+id: get-talent-protocol-human-checkmark-using-wallet-talent-id-or-account-identifier
+title: "Get Talent Protocol human checkmark using wallet, talent id or account identifier"
+description: "Get Talent Protocol human checkmark using wallet, talent id or account identifier"
+sidebar_label: "Get Talent Protocol human checkmark using wallet, talent id or account identifier"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VU1vGzcQ/SvEnFpgLblNT3uq0QaJ6kOM2kFrWII8Ime1jLjkhpyVqwr678Vw17JsyUlToLosxCHfvHnztQXGZYLyDt53DXr1S0161WBcwayAFiM2xBTlwhY8NgQlWAMFWA8lfO4obqAAQ0lH27INcnqDjjyrya+FekDniBUaEyklFaJCrUPnWVlDnm1lKUIBkT53NpKBkmNHBSRdU4NQboE3rbhMHK1fwm5X7FkMQPMUuqjpJaPXEAog3zUSboVRY+Lsf2m57hZQQM8XZrujmGpSvScVKsU1PQYCB5T+PLu4mpxdvr19ZFMTmuzgOdht6KIaVLqKgYMOTl1cTdSKNt+kxkwupzb4REnsP56fy+e5t3fEqs651Y+5VV2yfqn2iYICdPBMnuU5tq2zGuX5+FMSjO0xh7D4RJqhgDaGliLbnkF2ZHkzX1OU7JqDJ4sQHKGHXf4V8NP5D8dsO48d1yHav8koUYISS95PBPVSwdNB9iktFPe3rXm1ChviOhgoYUk5MOQaShhn2PkeVoqL4vqxJ7roJNHMbSrH462hCjvH70PiHRSwxmhx4XptDmwHf6WUWzvq6bVDLCMdGtFpJs50Fy1vriUDPRC2di6l8iQttvYy185XKlGEtL4K+allJ3cvribClGLqpV2/Oe7o2iZlU657qVMTdNeQ51wjqgoxW05VtEOmxGpAH039xDNFj85tCsUCO5gEPlJFMZJRHBQmtX4zmvqpvxmconPhIYnNCgZqVg+W65OuW4dchdgo67O9CvJYyqEJhlIpuGcZ9ZI2+axUt6FTLaak0O8twgJdt2/6XkZ1v9f3PnPtuJY60sg0mnoB8vQYxirrc4DJ4SRlJmxGwupjongIKeIcMIxhbQ0pVL/9caM4rMi/yvJi6KSMcT/qpXx6ZpMKC0bryajFRml0ThQSBPKmDdazur/6cH2jxkJnTA1aNxeJHkI0cxeW1t8/5aAT3jpSbil0aTT1UABTbNKH6pri2mo6aBUTdDpR9fl8bGhNTuZKGmNrz9podT+9ZUyhzv2T6UAJTLr++WT7FNCGxA3mCTZ0xv8xOJ41y74nmf7icevQetgV/ZzYDkPlDl4OlVkBdZ4Ld7DdLjDRx+h2OznuN5qMGmOTzBIDZYUu0ZHf/QiH734fVsj36tuX8Un6edz0mz+XGpSQN9+/5/T6Bv2iy6M1/+R+9jRfobyTnT1Muf8s1lcW8xdoHg7cZwL15gutqeUD29GOlWj2C+jd2xvY7f4B2F9Zfw==
+sidebar_class_name: "get api-method"
+info_path: docs/developers/talent-api/api-reference-v2/api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Talent Protocol human checkmark using wallet, talent id or account identifier"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/human_checkmark"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Talent Protocol human checkmark using wallet, talent id or account identifier
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","in":"query","description":"Talent ID, wallet address or account identifier","required":true,"schema":{"type":"string"}},{"name":"account_source","in":"query","schema":{"type":"string","enum":["farcaster","github","wallet"]},"description":"The source of the account"},{"name":"X-API-KEY","in":"header","description":"Your Talent Protocol API key","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Get human checkmark using Talent ID","content":{"application/json":{"schema":{"type":"object","properties":{"humanity_verified":{"type":"boolean"}}}}}},"401":{"description":"unauthorized request"}}}
+>
+  
+</StatusCodes>
+
+
+      

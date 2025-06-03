@@ -1,0 +1,71 @@
+---
+id: get-list-of-scorers
+title: "Get list of scorers"
+description: "Get list of scorers"
+sidebar_label: "Get list of scorers"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVU1v4zYQ/SvEnFpAsdNuTzrVh8U2DYo1Gi/awDbiMTW2uKFILjly6hr678XQ8kdiL1JfDHGGb958Pe6AcZ2gnMKD9pFiUn8QI8wLCBixIaYo1h04bAhK+PtmNL67uf/4CAUYByXUhBVFKKCipKMJbLwcP/o2qglacqzG0bPX3qrR+E490xYKiPStNZEqKDm2VEDSNTUI5Q54GyRO4mjcGrpuLs4peJcoif3n21v5ex3tE7FKPf9G+BegvWNyLL4YgjUaxXf4NcmF3WVAv/xKmqGAEH2gyGYfrkc9c8QYUVIwTE16H2Bft7d5vS3XpCYlnsqvFNfUJwNdAcm26/93Xzwv77/yO8BMTziutVbafYl3dvIW9vAr4Jfbny7b0TpsufbR/EuVklZTYujeksldsyaxoB/qXEBDXPsKSlhTriZyDSUMe4envr2J4uYwmm20MojMIZXD4a6iFbaWf/OJOyhgg9Hg0u67cWY7+5SuBjPgPK6hn9aB9o1kOpdguo2Gtw8yNHsgDOZJRvlsLoK5z7P9zqZIHYxb+XzVsBXf0fhOmFJM+8psPlzpsEnKpNwG2aPK67Yhx3ms1crHbLm2cRaZEqsefTBzd44pOrR2WygW2N4k8JFWFCNVir3CpDYfBjM3c5M+KFrrX5LYjGCgZvViuL4aOljklY+NMi7bV14uG7dWja8olYJ7k1HvaZvPSvXoWxUwJYXuaBEWaNvjauzLqBbH+i4y15ZrcixrToOZEyBHhzSec33OMNlfpcyEzUBYfUkUzyGlOGcMo9+YihSq3/+aKPbP5L7LctQvQsZYDPalPF0zSfklo3FUqeVWabRWKiQI5KrgjWO1GH9+mKih0BlSg8Y+SYlefKyerF8btzj1oBXeOlIlvNGmwcxBAUyxSZ9XDxQ3RtPZqlRepytTn8+HFW3IipKlIQZzE6LRe8UQZUWd9yfTgRKYdP3r1fUpIPjEDbqTFn5n768KFTD9w8Ng0TgRs7zpu14TpvBKE+YF1Hmtp7DbLTHRl2i7To6/tRS3UE7nJzGQr644rKSISGWSGCooV2gTXfA5vifww5/94/WjeueVu5pDVo1X6pAHB0qArtj15pHWFPjMdvGGiS4dpfLTxwl03X+Yj7bh
+sidebar_class_name: "get api-method"
+info_path: docs/developers/talent-api/api-reference-v2/api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get list of scorers"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/scorers_meta"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get list of scorers
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"X-API-KEY","in":"header","description":"Your Talent Protocol API key","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Get scorers meta","content":{"application/json":{"schema":{"type":"object","properties":{"scorers":{"type":"array","items":{"type":"object","properties":{"name":{"type":"string","description":"The name of the scorer"},"slug":{"type":"string","description":"The slug of the scorer"},"description":{"type":["string","null"],"description":"The description of the scorer"}}}}}}}}},"401":{"description":"unauthorized request"}}}
+>
+  
+</StatusCodes>
+
+
+      

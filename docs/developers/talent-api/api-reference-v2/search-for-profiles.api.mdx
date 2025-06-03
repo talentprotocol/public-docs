@@ -1,0 +1,657 @@
+---
+id: search-for-profiles
+title: "Search for Profiles"
+description: "# Search For Profiles"
+sidebar_label: "Search for Profiles"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "get api-method"
+info_path: docs/developers/talent-api/api-reference-v2/api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Search for Profiles"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/search/advanced/profiles"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+# Search For Profiles
+
+This endpoint `/search/advanced/profiles` allows you to fetch Profiles that
+match specific criteria.
+
+## The Search Criteria:
+
+1. tags (all tags should exist in the matching Profiles)
+2. score range for a Scorer
+3. credentials
+4. identity (free text search on any of the Profile properties that
+constitute an identity)
+5. profile ids
+6. wallet addresses
+7. human checkmark
+8. main role
+9. open to
+10. custom query
+
+### Exact Match
+
+Some of the search use cases above, support _exact match_ search. You will find relevant information in each
+individual search case below.
+
+## The endpoint
+
+Example:
+
+```bash
+$ curl -G -X GET 'https://api.talentprotocol.com/search/advanced/profiles' \
+-H 'Accept: application/json' \
+-H 'Authorization: Bearer ey...WA' \
+-H 'X-API-KEY: c2a...ec8' \
+--data-urlencode 'query={"score": {"max": 12345, "min": 100}, "humanCheckmark": true, "credentials": [{"name": "Primary Basename", "pointsRange": {"min": 1}}]}' \
+--data-urlencode 'sort={"score": { "order": "desc"}, "id": { "order": "desc" }	}' \
+--data-urlencode 'page=1' \
+--data-urlencode 'per_page=3'
+```
+
+## Example response
+
+```json
+{
+  "profiles": [
+    {
+      "calculating_score": false,
+      "created_at": ...
+
+    },
+    ...
+  ],
+  "pagination": {
+    "current_page": 1,
+    "last_page": 400,
+    "total": 10000,
+    "total_for_page": 25,
+    "point_in_time_id": null,
+    "search_after": null
+  }
+}
+```
+
+Above, you can see how we `sort` and how we `paginate`.
+
+Note: The query parameters need to be URL encoded.
+
+**Important:** The pagination technique using `page` parameter is adequate for UI-kind clients that do not need to browse
+all the pages with absolute accuracy. There is also the `point_in_time_id` technique which is
+more adequate if one wants to go from one page to the next with consistent results from page to page. See the section [Pagination](#pagination)
+
+## Search Cases
+
+### Search by profile ids:
+
+```
+{
+  "query": {
+    "profileIds":["ab0bbf06...profile uuid...3a83c8e14", "34ec610...profile uuid...38482bfb1"]
+  },
+  "sort": {
+    "id": {
+      "order": "asc"
+    }
+  },
+  "page": 1,
+  "per_page": 25
+}
+```
+
+The profile uuids given can be partial. All the Profiles whose uuid includes the given terms will be
+returned.
+
+Note that in sorting, when we refer to `id` we refer to an internal id that our database uses
+to identify Profiles. However, the `profileIds` refers to the public identifiers of profiles which are
+uuids.
+
+#### Exact Match
+
+Searching by profile ids supports _exact match_ searching. This means that you can pass: `"exactMatch": true` as
+part of the `"query"` property object. In that case, only the profiles that have `uuid` equal to any of the given
+terms will be return. Exact match is case insensitive.
+
+### Search by wallet addresses:
+
+```
+{
+  "query": {
+    "walletAddresses":["0x324e9e13d...wallet address...7e94462", "0xec4a...wallet address...eae7ca"]
+  },
+  "sort": {
+    "id": {
+      "order": "asc"
+    }
+  },
+  "page": 1,
+  "per_page": 25
+}
+```
+The wallet addresses given can be partial. Any Profile with wallet address that include the terms given will be
+returned.
+
+#### Exact Match
+
+Searching by wallet addresses supports _exact match_ searching. This means that you can pass: `"exactMatch": true` as
+part of the `"query"` property object. In that case, only the profiles that have a wallet address equal to any of the given
+terms will be returned. Exact match is case insensitive.
+
+### Search by tags:
+
+This will bring the Profiles with all the tags in the query.
+
+```
+{
+  "query": {
+    "tags":["tag 1", "tag 2", "tag 3"]
+  },
+  "sort": {
+    "id": {
+      "order": "desc"
+    }
+  },
+  "page": 1,
+  "per_page": 25
+}
+```
+
+### Search by main role:
+
+This will bring the Profiles with any of the main roles in the query.
+
+```
+{
+  "query": {
+    "mainRole":["community", "engineering", "design"]
+  },
+  "sort": {
+    "id": {
+      "order": "desc"
+    }
+  },
+  "page": 1,
+  "per_page": 25
+}
+```
+
+Main role can be one of:
+
+- community
+- creator
+- data_research
+- design
+- engineering
+- founder_ceo
+- growth_sales
+- investor
+- operations
+- other
+- product
+- unknown
+
+Note: Each profile can have only one _main role_.
+
+### Search by open to:
+
+This will bring the Profiles with any of the _open to_ in the query.
+
+```
+{
+  "query": {
+    "openTo":["co_founders_collaborators", "full_time_roles"]
+  },
+  "sort": {
+    "id": {
+      "order": "desc"
+    }
+  },
+  "page": 1,
+  "per_page": 25
+}
+```
+
+OpenTo can be one of:
+
+- full_time_roles
+- freelance_contract_work
+- co_founders_collaborators
+- investment_funding
+- not_open_to
+
+Note: Each profile can have only one _open to_.
+
+### Search by identity
+
+We want to be able to search by _identity_.
+
+```
+{
+  "query": {
+    "identity":"an identity"
+  },
+  "sort": {
+    "id": {
+      "order": "desc"
+    }
+  },
+  "page": 1,
+  "per_page": 25
+}
+```
+
+This will return any Profile that has an identity containing the given term.
+
+With _identity_ we generalize the following properties of the Profile:
+
+#### Top Level Fields
+
+- Display Name
+- Email
+- ENS
+- Main Wallet
+- Name
+- Talent Protocol ID
+- User Display Name (if Profile is associated to a User)
+- Username (if Profile is associated to a User)
+- User UUID (if Profile is associated to a User)
+- UUID
+
+#### Nested Fields
+
+- Identifier of any Account associated with the Profile
+- Username of any Account associated with the Profile
+- Name of any Social Account associated with the Profile
+- Display Name of any Social Account associated with the Profile
+- External ID of any Social Account associated with the Profile
+- Identifiers for any onchain entity, like Basename, or ENS name or CyberID e.t.c.
+
+#### Exact Match
+
+Searching by identity supports _exact match_ searching. This means that you can pass: `"exactMatch": true` as
+part of the `"query"` property object. In that case, only the Profiles that have an identity equal to the given term will be returned. Exact match is case insensitive.
+
+This is also true for the scope limited identity search.
+
+#### Search by Identity - Scope Limited Search
+
+One might want to limit the scope of identity search to a specific data source. In that case, the data source
+should be used as a prefix to the search term.
+
+For example:
+
+`ens:panos`
+
+The supported scope prefixes are:
+
+- `basename`
+- `cyberid`
+- `displayName`
+- `email`
+- `ens`
+- `farcaster`
+- `github`
+- `lens`
+- `linkedin`
+- `mainWallet`
+- `name`
+- `profileId`
+- `social`
+- `talentProtocol`
+- `twitter`
+- `userDisplayName`
+- `username`
+- `userUuid`
+- `uuid`
+- `wallet`
+- `x`
+
+Example query:
+
+```
+{
+  "query": {
+    "identity": "ens: panagiotismatsinopoulos.eth"
+  }
+}
+```
+
+Note that any Profile that includes the term given on their ENS identifier (for this example), will be returned.
+
+##### Exact Match
+
+Exact match is supported for scope limited identity search.
+
+### Search by Credentials
+
+This is an example to search for credentials AND value range. It brings all the profiles
+that have all the matching credentials. Note that if a value range
+is given, and `min` is missing, it is considered `1`. `max` in the value range is optional.
+
+A credential can be specified by:
+
+- `dataIssuer` This is mandatory. Exact match is performed. The list of data issuers and their metadata can be
+retrieved using the end point `GET /data_issuers_meta`. See more [here](https://docs.talentprotocol.com/docs/developers/talent-api/api-reference-v2/credentials#get-data_issuers_meta).
+- `name`. This is mandatory. Exact match is performed. Note that names are unique within the `dataIssuer` scope. The list of credentials names per data issuer is given
+by the same endpoint `GET /data_issuers_meta`. See more [here](https://docs.talentprotocol.com/docs/developers/talent-api/api-reference-v2/credentials#get-data_issuers_meta).
+- `category` Optional. If present Exact match is performed. The names of the categories are given in the same endpoint `GET /data_issuers_meta`. See more [here](https://docs.talentprotocol.com/docs/developers/talent-api/api-reference-v2/credentials#get-data_issuers_meta).
+- `valueRange`
+  * `min` Optional. If not given, it is assumed `1`
+  * `max`. Optional. If not given, it is assumed `2^256 - 1, i.e. 115792089237316195423570985008687907853269984665640564039457584007913129639935`
+- `readableValue` Optional. If present search does _contains_ comparison to match all the given
+data points that include the given value in their `readableValue` value.
+
+A credential will match if it satisfies ALL the conditions. And if there are many credentials
+in the query, then ALL of them should match.
+
+Example:
+
+```
+{
+  "query": {
+    "credentials: [
+      {
+        "dataIssuer": "Base", "name": "Basecamp Attendee", "valueRange": { "min": 10, "max": 30}
+      },
+      {
+        "dataIssuer": "Arbitrum", "name": "Outgoing Transactions", "valueRange": {"min": 10, "max": 32}
+      }
+    ]
+  },
+  "sort": {
+    "score": {
+      "order": "desc"
+    }
+  },
+  "page": 1,
+  "per_page": 25
+}
+```
+
+#### List of Credentials by Data Issuer
+
+Use the endpoint `GET /data_issuers_meta`. See more [here](https://docs.talentprotocol.com/docs/developers/talent-api/api-reference-v2/credentials#get-data_issuers_meta).
+
+### Search by Human Checkmark
+
+This is an example to search for builders that have a Human Checkmark. It brings all the Profiles
+that have human checkmark true.
+
+```
+{
+  "query": {
+    "humanCheckmark": true
+  },
+  "sort": {
+    "score": {
+      "order": "desc"
+    }
+  },
+  "page": 1,
+  "per_page": 25
+}
+'
+```
+
+If you want to get Profiles that do not have the human checkmark, you should give the value
+`false`.
+
+If you don't specify the `humanCheckmark`, the query returns both with `true` and `false`.
+
+
+### Search With Custom Query
+
+**Important** This feature is only available to paying API keys.
+
+It allows the client application to use the [OpenSearch Query DSL](https://docs.opensearch.org/docs/latest/query-dsl/) to search for profiles.
+
+This is an example request:
+
+```
+{
+  "query": {
+    "customQuery": {
+      "bool": {
+        "must": [
+          {
+            "regexp": {
+              "location": {
+                "value": ".*london.*"
+                }
+              }
+            }
+        ]
+      }
+    }
+  },
+  "sort": {
+    "score": {
+      "order": "desc"
+    }
+  },
+  "page": 1,
+  "per_page": 25
+}
+```
+
+This example, returns all the profiles that have location that includes the word `london`.
+
+#### Fields for Custom Query
+
+If you want to know the fields that can be used for custom query, you can issue the following request:
+
+```bash
+$ curl -v -X GET /search/advanced/metadata/fields/profiles/default \
+  -H 'Accept: application/json' \
+  -H 'X-API-KEY: <paying-api-key>
+```
+
+It will return a JSON response like the following:
+
+```json
+[
+  {
+    "name": "bio",
+    "label": "Bio",
+    "inputType": "text"
+  },
+  {
+    ...
+  }
+  ...
+]
+```
+
+The returned array defines the fields that can be used to query using `"customQuery"`.
+
+Each object describes a field with the following properties:
+
+- `name`: This is the name of the field. This is what it should be used in the `customQuery`.
+- `label`: This is a descriptive label that allows you to expose on your UI to build a query builder.
+- `inputType`: This is what is type of the value that can be accepted for the particular field. It can
+be one of `text`, `number`, `datetime-local`.
+- `valueEditorType`: This is what the UI element to give a value could be. It can be one of: `text`, `select`, `multi-select`
+`checkbox`.
+- `values`: This is a list of values with the candidate values one can set to search for.
+
+The `name` is the most important information here. Because this is the one you will use in the `customQuery` object. The other properties are only useful if you want to build your own query builder
+UI.
+
+Note that the schema of each object is based on the [React Query Builder component](https://react-querybuilder.js.org/).
+
+## Using `fetch` on Browser
+
+The search endpoints are `GET` endpoints that can accept the params either in the body
+of the request or URL encoded. The latter case is useful when using `fetch()` requests from a browser.
+
+Example:
+
+```javascript
+const data = {
+  query: {
+    score: {
+      min: 10,
+      max: 60
+    }
+  },
+  sort: {
+    score: {
+      order: "desc"
+    }
+  },
+  page: 1,
+  per_page: 25
+};
+
+const queryString = Object.keys(data)
+  .map(key => `${key}=${encodeURIComponent(JSON.stringify(data[key]))}`)
+  .join("&");
+
+const response = await fetch(
+  `${ENV_VARS.API_BASE_URL}/search/advanced/profiles?${queryString}`,
+  {
+    method: "GET",
+    headers: {
+      Accept: "application/json",
+      "X-API-Key": ENV_VARS.TALENT_PROTOCOL_API_KEY
+    }
+  }
+);
+const jsonResponse = await response.json();
+console.debug("jsonResponse", jsonResponse);
+```
+
+## Pagination
+
+Pagination requires sorting. So, we suggest that you always use the `sort` key in your request
+and consistently send the same `sort` conditions when moving from one page to the next. This
+is true regardless of the pagination mode you use (i.e. _page-based_ or _point-in-time-based_ pagination)
+
+### `per_page`
+
+This is an integer which defines how many results (Profiles) a response can have.
+
+This cannot be more than `25` for free customers and no more than `250` for paying customers.
+
+### `page` option
+
+The default pagination with the `page` param may not yield consistent results when going from one page to the next.
+This is because new documents might be indexed or deleted in-between.
+
+### Point In Time option
+
+For consistent travel from one page to the next, we suggest the Point in Time technique.
+
+Point In Time option is only available to paying customers.
+
+It works as follows:
+
+Each search from page to page is characterized by a `point_in_time_id`.
+
+Visiting the first page:
+
+- You don't pass the `page` parameter.
+- You pass the `keep_alive_minutes` parameter, which is an integer that can't be more than 60. It represents how much time a result set stays alive in between searches for the same `point_in_time_id`.
+- You don't pass a `point_in_time_id`. You pass it only from the second page and beyond.
+- You don't pass a `search_after`. You pass it only from the second page and beyond.
+
+The search for the first page returns some meta-data that you have to use on your search for the next page:
+
+- `point_in_time_id`
+- `search_after`
+
+On search for the next page, you have to pass these extra parameters with the values
+that you got from the result of the previous page.
+
+**Important:** This is designed to be used by clients, such as scripts, that need to
+browse from page to page the whole search index. The backend consumes a lot of resources
+in supporting this feature.
+
+**Important:** The `keep_alive_minutes` can't be more than 60 minutes. This should be enough
+for the client script to process the results of one page before going to fetch the next page.
+If this number seems to be small to you, then please contact tech@talentprotocol.com.
+
+## Sorting
+
+The `sort` parameter allows to sort results by the `score` and by `id`. We are suggesting
+that you use both, because two Profiles might have the same score.
+
+This is a useful example:
+
+```json
+{
+  "sort": {
+    "score": {
+      "order": "desc",
+      "scorer": "Builder Score"
+    },
+    "id": {
+      "order": "desc"
+    }
+  }
+}
+```
+
+## Caching
+
+This endpoint returns cached data for free customers.
+Paying customers get up-to-date data.
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"X-API-KEY","in":"header","required":true,"description":"Your Talent Protocol API Key","schema":{"type":"string"}},{"name":"Authorization","in":"header","description":"Optional: The JWT to identify a calling User","schema":{"type":"string"}},{"name":"query","in":"query","required":true,"schema":{"type":"object","properties":{"query":{"type":"object","properties":{"score":{"type":"object","properties":{"min":{"type":"number"},"max":{"type":"number"},"scorer":{"type":"string","enum":["Builder Score"]}},"required":["min","max"]},"tags":{"type":"array","items":{"type":"string"}},"credentials":{"type":"array","items":{"type":"object","properties":{"dataIssuer":{"type":"string"},"name":{"type":"string"},"category":{"type":"string"},"readableValue":{"type":"string"},"valueRange":{"type":"object","properties":{"min":{"type":"number"},"max":{"type":"number"}}}},"required":["dataIssuer","name"]}},"identity":{"type":"string"},"profileIds":{"type":"array","items":{"type":"string"}},"walletAddresses":{"type":"array","items":{"type":"string"}},"humanCheckmark":{"type":"boolean","default":null},"exactMatch":{"type":"boolean","default":false},"customQuery":{"type":"string"}}},"sort":{"type":"object","properties":{"score":{"type":"object","properties":{"order":{"type":"string"},"scorer":{"type":"string","enum":["Builder Score"]}}},"id":{"type":"object","properties":{"order":{"type":"string"}}}}},"page":{"type":"number"},"keep_alive_minutes":{"type":"number","enum":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60]},"point_in_time_id":{"type":"string"},"search_after":{"type":"array","items":{"oneOf":[{"type":"number"},{"type":"string"}]}}}}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"get profiles matching input query and sorted by sort specification","content":{"application/json":{"schema":{"type":"object","properties":{"profiles":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","description":"The UUID of the profile."},"bio":{"type":["string","null"],"description":"The biography of the profile."},"created_at":{"type":"string","format":"date-time","description":"The ISO8601 timestamp of when the profile was created."},"display_name":{"type":["string","null"],"description":"The display name of the profile."},"human_checkmark":{"type":"boolean","description":"Indicates if the profile has a human checkmark."},"image_url":{"type":["string","null"],"description":"The URL of the profile's image."},"location":{"type":["string","null"],"description":"The location of the profile."},"name":{"type":["string","null"],"description":"The name of the profile."},"calculating_score":{"type":"boolean","description":"Indicates if the profile is calculating its score."},"tags":{"type":"array","items":{"type":"string"},"description":"An array of tag descriptions associated with the profile."},"verified_nationality":{"type":"boolean","description":"Indicates if the profile has a verified nationality or not"},"builder_score":{"types":"object","properties":{"points":{"type":"number","description":"The Builder Score points."},"last_calculated_at":{"type":"string","format":"date-time","description":"The ISO8601 timestamp of when the score was last calculated."}}}}}},"pagination":{"type":"object","properties":{"current_page":{"type":"integer","description":"The current page number."},"last_page":{"type":"integer","description":"The last page number."},"total":{"type":"integer","description":"The total number of profiles matching the query terms."},"total_for_page":{"type":"integer","description":"The total number of profiles on the current page."},"point_in_time_id":{"type":["string","null"],"description":"The point in time ID used with Point In Time pagination mode."},"search_after":{"type":"array","items":{"oneOf":[{"type":"number"},{"type":"string"}]},"description":"The search_after value used with Point In Time pagination mode."}}}}}}}},"400":{"description":"bad request","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string"}}}}}},"401":{"description":"unauthorized request with wrong api key","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

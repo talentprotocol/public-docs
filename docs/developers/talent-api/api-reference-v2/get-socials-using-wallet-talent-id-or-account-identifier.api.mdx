@@ -1,0 +1,71 @@
+---
+id: get-socials-using-wallet-talent-id-or-account-identifier
+title: "Get socials using wallet, talent id or account identifier"
+description: "Get socials using wallet, talent id or account identifier"
+sidebar_label: "Get socials using wallet, talent id or account identifier"
+hide_title: true
+hide_table_of_contents: true
+api: eJytV8FuGzcQ/RViTi2wltKmpz3VQIPUzSFG7aA1bEMeLWe1jLnkhpyVqgr692LIlSxHkl2l1UXQzvK9xyHnzWgFjLMI5S1c+cqgjXBfQIcBW2IKEliBw5agBKOhAOOghC89hSUUoClWwXRsvDy9RkuO1cUvhVqgtcQKtQ4Uo/JBYVX53rEymhyb2lCAAgJ96U0gDSWHngqIVUMtQrkCXnZCGTkYN4P1utiqGIAm0fehoq8VHUMogFzfyjZrDBVGTvwzw00/hQKyXrhf7+2pIZWZlK8VN7TZCOxI+vPs/PLi7MO7m42ahlAngudgN74PasjSZfDsK2/V+eWFeqTlSdm4l5dj512kKPEf37yRr+ds74lVzGeq+mjcTG0PCAqovGNyLMuw66ypUJaNP0dZu9rn9tPPVDEU0AXfUWCTmQeCnRcxBJTdGKY2vg5Qe2v9gsIkZ3X7/u3TybneWrmV+yeTr5Sv1QYlbk6pC742loYEwLoYiIyb/R9Mks2jTNbnZJ5IsVl2HNgvHIUTUdm0FBnb7jjs1PgTQafGH4fTJnYWl5NcHCfhDkuVLD1OYFqc0aQP9kT0DVJar/pgj1M06LQ9VX1e9PLx6Uk0rnoZufahRYYSNDKdyQHuW+3XJ7toyCXaTKcWGFXiE+JByjek7MUkDQ78gtdachEKmGKkdBskIg8OerA17pG0cVAALwznKNXdYWXPTflrcZtPAT+9+WHfGnuHPTc+mL9JK7FdiixN5lUHzX2iUJyd1Oijra0lbryGEmaUTA+5gRLGG78sIFKYbxpsOhhomLtYjscrTTX2ln/1kddQwByDwanNfrkT2/kpvtuZUZbVDa1lVPlWUnEvZFUfDC+vxNYzEHZmIn1nx7k78yE1olfamiTKuDqbhmGpEzi/vBClFGJO3fztgTtrojIxnZc0Pe2rviXH2fRqH1LkUHu0yBRZDeijO3fhmIJDa5eFYoEdQgIfqKYQSCv2CqOavx3duTt3PZCiuHeUmBEMrFgtDDcHqTuLLLWoTC6tJ+tvvaZYCu5ZQv1Ay/SsVDe+Vx3GqNBtI6ICbb+9rDmN6mGb34ektedG7k+FTKM7J0CONtt4TPnZwWR/UDITtiNR9SlS2IWU5OwoDH5uNClUv/1xrdg/kjuq8nyolITxMMqpfFpmovJTRuNIq+lSVWitZEgQyOnOG8fq4fLj1bUai5wxtWjsRFK08EFPrJ8Z9/B0Br3orgKlUkIbR3fJDyi08WN9RWFuxHG2paJ9FQ/c+vR8rGlOVmaNOMbOnHXBVNmeZPbBKtVPkgMlMFXNzwfLp4DOR24xtfOhMv6LMTwrim3tMf3F486iceKsg1Fn07jdDln3BTSp7m9htRJT/RTsei2P8/grVqJNFK/QUNZoI+3xbec++O73Yd78Xp0+uR+Unewk/01IVwlKSGPyv9d0fNx+kXLvP8ET/f2Tf0J5KwP+4GLfnKxXpvgXZO4a6rME5fB5VVHHO7G9wVx2s20s799dw3r9D+0kyOM=
+sidebar_class_name: "get api-method"
+info_path: docs/developers/talent-api/api-reference-v2/api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get socials using wallet, talent id or account identifier"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/socials"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get socials using wallet, talent id or account identifier
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","in":"query","description":"Talent ID, wallet address or account identifier","required":true,"schema":{"type":"string"}},{"name":"account_source","in":"query","schema":{"type":"string","enum":["farcaster","github","wallet"]},"description":"The source of the account"},{"name":"X-API-KEY","in":"header","description":"Your Talent Protocol API key","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Get socials using Talent ID","content":{"application/json":{"schema":{"type":"object","properties":{"socials":{"type":"array","items":{"type":"object","properties":{"follower_count":{"type":["string","null"],"description":"The count of followers of the profile social"},"following_count":{"type":["string","null"],"description":"The count of following of the profile social"},"location":{"type":["string","null"],"description":"The location of the profile social"},"owner":{"type":["string","null"],"description":"The timestamp of the profile social"},"bio":{"type":["string","null"],"description":"The bio of the profile social"},"display_name":{"type":["string","null"],"description":"The display name of the profile social"},"image_url":{"type":["string","null"],"description":"The profile image url of the profile social"},"handle":{"type":["string","null"],"description":"The handle of the profile social"},"owned_since":{"type":["string","null"],"format":"date-time","description":"The timestamp of when the social was owned"},"profile_url":{"type":["string","null"],"description":"The url of the profile social"},"source":{"type":"string","enum":["lens","basename","ens","farcaster","github","linkedin","twitter","efp"],"description":"The source of the profile social"}}}}}}}}},"401":{"description":"unauthorized request"}}}
+>
+  
+</StatusCodes>
+
+
+      
