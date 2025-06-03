@@ -4,16 +4,16 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
-import { version } from 'react';
+import { themes as prismThemes } from "prism-react-renderer";
+import { version } from "react";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Talent Protocol Docs',
-  tagline: 'What\'s your Builder Score?',
-  favicon: 'img/favicon.ico',
+  title: "Talent Protocol Docs",
+  tagline: "What's your Builder Score?",
+  favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -21,35 +21,35 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://docs2.talentprotocol.com',
+  url: "https://docs2.talentprotocol.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'talentprotocol', // Usually your GitHub org/user name.
-  projectName: 'public-docs', // Usually your repo name.
-  deploymentBranch: 'main', // The branch that GitHub pages will deploy from.
+  organizationName: "talentprotocol", // Usually your GitHub org/user name.
+  projectName: "public-docs", // Usually your repo name.
+  deploymentBranch: "main", // The branch that GitHub pages will deploy from.
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "warn",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   plugins: [
     [
-      '@docusaurus/plugin-content-pages',
+      "@docusaurus/plugin-content-pages",
       {
-        path: 'src/pages',
-        routeBasePath: '',
+        path: "src/pages",
+        routeBasePath: "",
         // include: ['**/*.{js,jsx,ts,tsx,md,mdx}'],
         // exclude: [
         //   '**/_*.{js,jsx,ts,tsx,md,mdx}',
@@ -65,31 +65,31 @@ const config = {
       },
     ],
     [
-      '@docusaurus/plugin-content-docs',
+      "@docusaurus/plugin-content-docs",
       {
-        path: 'docs',
+        path: "docs",
         breadcrumbs: true,
-        routeBasePath: '/docs',
-        sidebarPath: './sidebars.js',
-      }
-    ],
-    [
-      '@docusaurus/plugin-sitemap',
-      {
-        lastmod: 'date',
-        changefreq: 'weekly',
-        priority: 0.5,
-        ignorePatterns: ['/tags/**'],
-        filename: 'sitemap.xml',
+        routeBasePath: "/docs",
+        sidebarPath: "./sidebars.js",
       },
     ],
     [
-      '@docusaurus/theme-classic',
+      "@docusaurus/plugin-sitemap",
+      {
+        lastmod: "date",
+        changefreq: "weekly",
+        priority: 0.5,
+        ignorePatterns: ["/tags/**"],
+        filename: "sitemap.xml",
+      },
+    ],
+    [
+      "@docusaurus/theme-classic",
       /** @type {import('@docusaurus/theme-classic').Options} */
       ({
-        customCss: './src/css/custom.css',
+        customCss: "./src/css/custom.css",
       }),
-    ]
+    ],
   ],
 
   // presets: [
@@ -130,7 +130,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/talent-protocol-og-image.jpg',
+      image: "img/talent-protocol-og-image.jpg",
       // navbar: {
       //   title: 'Talent Protocol Docs',
       //   logo: {
@@ -195,21 +195,21 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
-        additionalLanguages: ['solidity', 'ruby', 'yaml', 'bash'],
-        defaultLanguage: 'bash',
+        additionalLanguages: ["solidity", "ruby", "yaml", "bash"],
+        defaultLanguage: "bash",
       },
       colorMode: {
-        defaultMode: 'dark',
+        defaultMode: "dark",
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
       docs: {
-        versionPersistence: 'localStorage',
+        versionPersistence: "localStorage",
         sidebar: {
           hideable: true,
           autoCollapseCategories: true,
         },
-      }
+      },
     }),
 };
 
