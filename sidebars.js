@@ -21,14 +21,35 @@ const sidebars = {
   // But you can create a sidebar manually
 
   tutorialSidebar: [
-    'index',
+    "index",
     {
-      type: 'category',
-      label: 'Developers',
-      items: ['Developers/Get Started'],
+      type: "category",
+      label: "Developers",
+      items: [
+        "developers/Get Started",
+        {
+          type: "category",
+          label: "Talent API",
+          link: {
+            type: "doc",
+            id: "developers/talent-api/index",
+          },
+          items: [
+            "developers/talent-api/authentication",
+            {
+              type: "category",
+              label: "API Reference - V2",
+              link: {
+                type: "doc",
+                id: "developers/talent-api/api-reference-v2/index",
+              },
+              items: ["developers/talent-api/api-reference-v2/score"],
+            },
+          ],
+        },
+      ],
     },
   ],
-
 };
 
 export default sidebars;

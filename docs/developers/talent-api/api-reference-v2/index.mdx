@@ -1,0 +1,33 @@
+# API Reference - V2
+
+Technical specifications and usage examples for all endpoints in the Talent Protocol V2 API.
+
+The Talent Protocol API V2 provides comprehensive access to verified builder reputation data through a redesigned architecture that's more powerful and flexible than V1.
+
+## Key Improvements in V2
+
+* **Advanced Search**: Filter profiles by multiple criteria including tags, scores, and human verification status
+* **Profile-Centric Design**: Streamlined endpoints organized around Profiles as the central entity
+* **Multiple Scoring Systems**: Support for Builder Score and other upcoming scores
+* **Consistent Responses**: Standardized response formats across all endpoints
+* **Improved Pagination**: Options for both page-based and cursor-based pagination
+
+
+## Getting Started
+
+All V2 API endpoints require authentication using your API key in the `X-API-KEY` header.
+
+Base URL: `https://api.talentprotocol.com/`
+
+### Core Endpoints
+
+* [**Profile Search**](/docs/developers/talent-api/api-reference-v2/search): `/search/advanced/profiles` - Find profiles matching specific criteria
+* [**Profile Data**](/docs/developers/talent-api/api-reference-v2/search): `/profile` - Get profile information by ID or account identifier
+* [**Score Data**](/docs/developers/talent-api/api-reference-v2/score): `/score` - Get Builder Score and other scoring information
+* [**Farcaster Scores**](/docs/developers/talent-api/api-reference-v2/farcaster-scores): `/farcaster/scores` - Get the Builder Score of Farcaster users
+* [**Credentials Data**](/docs/developers/talent-api/api-reference-v2/score#credentials): `/credentials` - Get the points each data point contributed to the Builder Score
+* [**Data Points**](/docs/data-points/arbitrum): `/data_points` - Get the data points providing a list of slugs and for a Talent profile
+* [**Account Data**](/docs/developers/talent-api/api-reference-v2/accounts): `/accounts` - Get connected accounts information
+* [**Social Data**](/docs/developers/talent-api/api-reference-v2/socials): `/socials` - Get connected social media information
+
+See the individual endpoint documentation for detailed request and response formats.
