@@ -1,0 +1,48 @@
+---
+sidebar_position: 3
+---
+
+# Profile
+
+A Profile is the entity in Talent Protocol that represents a builder's digital identity and reputation.
+
+## Profile Types
+
+- **User Profile**: A profile connected to a verified Talent Protocol user
+- **Account Profile**: An independent profile representing an indexed Account not yet claimed by a User
+
+## Profile Properties
+
+Profiles contain several key properties that constitute a builder's identity:
+
+### Basic Information
+
+- `id`: Unique identifier for the profile
+- `name`: The builder's name
+- `display_name`: The displayed name that may differ from the primary name
+- `bio`: A short biography or description
+- `location`: Geographic location
+- `image_url`: Profile picture URL
+
+### Reputation Properties
+
+- `human_checkmark`: Boolean indicating if the profile owner has been verified as human
+- `onchain`: Boolean indicating if the profile has verified onchain presence
+- `tags`: Array of skill or interest tags associated with the profile
+- `calculating_score`: Boolean indicating if the profile's score is being recalculated
+
+### Technical Properties
+
+- `created_at`: Timestamp when the profile was created
+
+## Profile Search
+
+The API v2 provides advanced search capabilities for profiles based on:
+
+- Identity information (names, ENS domains, usernames)
+- Connected accounts (GitHub, wallet addresses, etc.)
+- Human verification status
+- Builder Score values and score credentials
+- Tags and interests
+
+See the [API Reference](/docs/developers/talent-api/api-reference-v2) for detailed examples of profile search queries.

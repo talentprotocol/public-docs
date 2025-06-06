@@ -1,0 +1,20 @@
+---
+sidebar_position: 5
+---
+
+# Data Issuer
+
+A Data Issuer is the trusted entity associated with Data Point on Talent Protocol.
+
+## Key Attributes:
+
+- Represents the source of trust for the data (e.g., GitHub, Base, ENS).
+- It can be distinct from the technical provider where Talent Protocol fetches the data from ([Accounts](/docs/protocol-concepts/account)).
+- Some Data Issuers can also be [Accounts](/docs/protocol-concepts/account) (e.g., GitHub), while others are not (e.g., Base).
+- Some [Accounts](/docs/protocol-concepts/account) can provide multiple data issuers (ex.: wallet address)
+- A single Data Issuer can provide multiple [Data Points](/docs/protocol-concepts/data-point).
+
+## Examples:
+
+- GitHub is both an Account (where we get the data from technically) and the Data Issuer (entity that we trust to issue reputation data to a subject).
+- Base is a Data Issuer, with multiple Data Points (number of transactions, smart contracts deployed, ...), but it's not an Account. The account in this case is the wallet address.

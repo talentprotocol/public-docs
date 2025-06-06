@@ -1,0 +1,65 @@
+---
+sidebar_position: 2
+---
+
+# Account
+
+An Account represents a connection with a third-party data provider.
+
+An **Account** represents a connection with a third-party entity (e.g., Wallet Address, GitHub, X, LinkedIn) that feeds reputation data into Talent Protocol. Accounts can exist independently or be linked to a user.
+
+A [**User**](/docs/protocol-concepts/user) represents an individual that signed up on talentprotocol.com to verify their reputation data and increase their [Builder Score](/docs/protocol-concepts/scoring-systems/builder-score), by connecting multiple [**accounts**](/docs/protocol-concepts/account)**.**
+
+## Key Attributes:
+
+- **Accounts** have Account IDs (previously know as Passport ID) and account-specific URLs (until they're linked to a user), following this format:
+  - `talentprotocol.com/address/0xbd…23d4`
+  - `talentprotocol.com/github/filmacedo`
+- If linked to a user, the account URL will automatically redirect to the user’s profile URL. Otherwise, it will show the data from that imported account independently.
+- Once linked to a user, an account loses its independent profile and redirect to the user’s profile. The account also loses its [Builder Score](/docs/protocol-concepts/scoring-systems/builder-score), and its data feeds into the user’s aggregated reputation.
+- Accounts display their own [Builder Score](/docs/protocol-concepts/scoring-systems/builder-score) unless linked to a user, at which point their data integrates into the user’s aggregated [Builder Score](/docs/protocol-concepts/scoring-systems/builder-score).
+- Users can claim an imported account by verifying ownership (e.g., signing a wallet message, connecting GitHub).
+
+## Types of Accounts:
+
+- I**ndexed Account**: All accounts being tracked by Talent Protocol, whether connected by users or imported automatically.
+
+- **Imported Account**: Public accounts indexed directly by Talent Protocol, without any explicit user action, such as curated wallet addresses or public GitHub profiles.
+
+- **Connected Account**: Accounts actively linked to a user’s profile and with verified ownership.
+
+## Account Sources
+
+Accounts can come from various sources:
+
+- `wallet`: Cryptocurrency wallets (Ethereum, Base, etc.)
+- `github`: GitHub developer accounts
+- `farcaster`: Farcaster social accounts
+- `lens`: Lens Protocol accounts
+- `x_twitter`: Twitter/X accounts
+- `linkedin`: Professional LinkedIn profiles
+- `talent_protocol`: Native Talent Protocol accounts
+- `worldcoin`: World ID verified accounts
+- `self`: Self-verified information
+
+## Account Properties
+
+- `identifier`: The unique identifier on the source platform
+- `source`: The platform or data provider (see Account Types)
+- `owned_since`: When the account was first created
+- `connected_at`: When the account was connected to Talent Protocol
+- `username`: The user-friendly name on the source platform
+
+## Account Relationship to Profiles
+
+- An Account can exist independently with its own [Profile](/docs/protocol-concepts/profile)
+- When claimed by a [User](/docs/protocol-concepts/user), the Account feeds data into the User's Profile
+- Multiple Accounts from different sources can be connected to a single User Profile
+
+## Accessing Account Data
+
+[API v2](/docs/developers/talent-api/api-reference-v2) provides endpoints to:
+
+- Retrieve accounts associated with a profile
+- Search profiles by account identifiers
+- Access data points sourced from specific accounts

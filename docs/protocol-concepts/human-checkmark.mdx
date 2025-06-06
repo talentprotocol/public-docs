@@ -1,0 +1,26 @@
+---
+sidebar_position: 7
+---
+
+# Human Checkmark
+
+A composable protocol primitive that helps identify real humans.
+
+## Human Verification
+
+A protocol primitive that aggregates verified PoH (Proof of Humanity) and KYC (Know Your Customer) data from trusted sources into a simple binary signal: verified or not.
+
+Any of the verifications below will automatically give users a "Human Checkmark" on Talent Protocol.
+
+| Data Issuer | Data Point Name            | Description                                                                                                                                                                   | Data Point Category                                    |
+| ----------- | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| Binance     | Binance Account Bound      | Proves completion of identity verification on Binance, by verifying ownership of a [BABT](https://www.binance.com/en/BABT).                                                   | <span className="badge badge--primary">Identity</span> |
+| Coinbase    | Coinbase Verified Account  | Proves completion of [identity verification on Coinbase](https://www.coinbase.com/verify-document), by verifying an onchain attestation.                                      | <span className="badge badge--primary">Identity</span> |
+| Galxe       | Galxe Passport             | Proves completion of identity verification on Galxe, by verifying ownership of a [Galxe Passport](https://app.galxe.com/passport) SBT.                                        | <span className="badge badge--primary">Identity</span> |
+| human.tech  | Human ID                   | Proves completion of identity verification with a government ID or ePassport on [Human.tech](https://silksecure.net/holonym/diff-wallet), by verifying ownership of a ZK SBT. | <span className="badge badge--primary">Identity</span> |
+| World       | Verified Human             | Proves completion of [Proof of Personhood](https://world.org/world-id) verification with World ID.                                                                            | <span className="badge badge--primary">Identity</span> |
+| self.xyz    | Self Identity Verification | Proves completion of passport verification with [self.xyz](https://self.xyz/).                                                                                                | <span className="badge badge--primary">Identity</span> |
+
+## Accessible via API
+
+The best part? This primitive is accessible to any developer through our API, making human verification a building block for the entire ecosystem.

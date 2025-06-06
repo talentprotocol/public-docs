@@ -1,0 +1,39 @@
+---
+sidebar_position: 8
+---
+
+# Socials
+
+Socials represent a builder's connected social media accounts and their associated data.
+
+## What are Socials?
+
+In Talent Protocol, a Social is a verified connection to a social platform like X/Twitter, Farcaster, Lens, or LinkedIn that:
+
+- Provides additional context about a builder's reputation
+- Contains metadata such as follower count, following count, and profile details
+- Has been verified through OAuth or other verification methods
+
+## Social Properties
+
+Each Social connection includes:
+
+- `source`: The platform (e.g., "lens", "farcaster", "github")
+- `owner`: The account identifier on that platform
+- `follower_count`: Number of followers
+- `following_count`: Number of accounts followed
+- `display_name`: Display name on that platform
+- `name`: Username on the platform
+- `profile_url`: Link to the social profile
+- `image_url`: Profile picture URL
+- `bio`: Profile description
+- `location`: Location listed on the social platform
+- `owned_since`: When the account was first verified
+
+## Accessing Social Data
+
+[API v2](/docs/developers/talent-api/api-reference-v2) provides dedicated endpoints to access a profile's social connections, allowing developers to:
+
+- Verify cross-platform identity
+- Assess social credibility
+- Display social proof in applications
