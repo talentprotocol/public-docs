@@ -134,20 +134,14 @@ const config = {
             outputDir: "docs/developers/talent-api/api-reference-v1",
             sidebarOptions: {
               groupPathsBy: "tag",
-              categoryLinkSource: "info",
             },
-            showExtensions: true,
-            showSchemas: true,
           },
           talentProtocolApiV2: {
             specPath: "https://api.talentprotocol.com/api-docs/v3/swagger.json",
             outputDir: "docs/developers/talent-api/api-reference-v2",
             sidebarOptions: {
               groupPathsBy: "tag",
-              categoryLinkSource: "info",
             },
-            showExtensions: true,
-            showSchemas: true,
           },
         },
       },

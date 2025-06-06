@@ -3,6 +3,10 @@ import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 const sidebar: SidebarsConfig = {
   apisidebar: [
     {
+      type: "doc",
+      id: "developers/talent-api/api-reference-v1/api",
+    },
+    {
       type: "category",
       label: "Passport Credentials",
       items: [

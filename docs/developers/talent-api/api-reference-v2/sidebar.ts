@@ -3,12 +3,12 @@ import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 const sidebar: SidebarsConfig = {
   apisidebar: [
     {
+      type: "doc",
+      id: "developers/talent-api/api-reference-v2/api",
+    },
+    {
       type: "category",
       label: "Profiles, Advanced Search",
-      link: {
-        type: "doc",
-        id: "developers/talent-api/api-reference-v2/api",
-      },
       items: [
         {
           type: "doc",
