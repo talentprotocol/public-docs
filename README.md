@@ -2,6 +2,8 @@
 
 ## How to Update Docs
 
+You'll need to have a `.env` file with a `TALENT_PROTOCOL_API_KEY` as access to the Talent Protocol API is required to auto-generate some of the documentation. Any working key will work, you can grab one from our [developer page](https://app.talentprotocol.com/developers),
+
 ### Data Points
 
 The data points pages are updated automatically. Whenever a new data point is published (process that takes place in the `talent-api` repository),
