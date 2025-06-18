@@ -14,7 +14,7 @@
 
  @type {import('@docusaurus/plugin-content-docs').SidebarsConfig}
  */
-import apiSideBarItems from "./docs/developers/talent-api/api-reference-v2/sidebar";
+import apiSideBarItems from "./docs/developers/talent-api/api-reference/sidebar";
 
 const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
@@ -43,7 +43,7 @@ const sidebars = {
   //             label: "API Reference - V2",
   //             link: {
   //               type: "doc",
-  //               id: "developers/talent-api/api-reference-v2/index",
+  //               id: "developers/talent-api/api-reference/index",
   //             },
   //             items: apiSideBarItems,
   //           },

@@ -8,7 +8,7 @@ import "dotenv/config";
 
 import { themes as prismThemes } from "prism-react-renderer";
 // import { version } from "react";
-// import apiSideBarItems from "./docs/developers/talent-api/api-reference-v2/sidebar.ts";
+// import apiSideBarItems from "./docs/developers/talent-api/api-reference/sidebar.ts";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -132,14 +132,7 @@ const config = {
         docsPluginId: "default",
 
         config: {
-          talentProtocolApiV1: {
-            specPath: "https://api.talentprotocol.com/api-docs/v1/swagger.json",
-            outputDir: "docs/developers/talent-api/api-reference-v1",
-            sidebarOptions: {
-              groupPathsBy: "tag",
-            },
-          },
-          talentProtocolApiV2: {
+          talentProtocolApi: {
             specPath: "https://api.talentprotocol.com/api-docs/v3/swagger.json",
             outputDir: "docs/developers/talent-api/api-reference",
             sidebarOptions: {
