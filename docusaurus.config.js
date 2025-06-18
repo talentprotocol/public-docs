@@ -141,7 +141,7 @@ const config = {
           },
           talentProtocolApiV2: {
             specPath: "https://api.talentprotocol.com/api-docs/v3/swagger.json",
-            outputDir: "docs/developers/talent-api/api-reference-v2",
+            outputDir: "docs/developers/talent-api/api-reference",
             sidebarOptions: {
               groupPathsBy: "tag",
             },
