@@ -187,27 +187,14 @@ const config = {
     ({
       // Replace with your project's social card
       image: "img/talent-protocol-og-image.jpg",
-      // navbar: {
-      //   title: 'Talent Protocol Docs',
-      //   logo: {
-      //     alt: 'Talent Protocol Logo',
-      //     src: 'img/talent-protocol-logo.avif',
-      //   },
-      //   items: [
-      //     {
-      //       type: 'docSidebar',
-      //       sidebarId: 'tutorialSidebar',
-      //       position: 'left',
-      //       label: 'Tutorial',
-      //     },
-      //     {to: '/blog', label: 'Blog', position: 'left'},
-      //     {
-      //       href: 'https://github.com/talentprotocol/public-docs',
-      //       label: 'GitHub',
-      //       position: 'right',
-      //     },
-      //   ],
-      // },
+      navbar: {
+        title: "Talent Protocol",
+        logo: {
+          alt: "Talent Protocol Logo",
+          src: "img/talent-protocol-logo.avif",
+          href: "/docs/developers/get-started",
+        },
+      },
       // footer: {
       //   style: 'dark',
       //   links: [
