@@ -2,13 +2,14 @@
 
 import { base } from "@reown/appkit/networks";
 import { useAppKit, useAppKitEvents } from "@reown/appkit/react";
-import { useMutation, useQuery } from "@tanstack/react-query";
+import { useMutation } from "@tanstack/react-query";
 import { useEffect, useState, useCallback } from "react";
 import { useAccount, useSignMessage, useSwitchChain } from "wagmi";
 import { talentAuthService } from "../services/talentAuth";
 import { useAuth } from "../contexts/AuthContext";
 import { useFullDisconnect } from "./useFullDisconnect";
 import { SiweMessage } from "sign-in-with-ethereum";
+import { getAddress } from "viem";
 
 const requiredChain = base;
 
@@ -28,14 +29,7 @@ export const useLinkWallet = ({
   const [isSigning, setIsSigning] = useState(false);
   const { setAuthToken } = useAuth();
 
-  const { refetch: refetchNonce } = useQuery<string>({
-    queryKey: ["getTalentNonce", address],
-    queryFn: async () => {
-      if (!address) throw new Error("Address is required");
-      return await talentAuthService.createNonce(address);
-    },
-    enabled: false
-  });
+  // Fetch nonce directly when needed (no React Query boilerplate)
 
   const connectWallets = useMutation({
     mutationFn: async (params: {signature: string, siweMessage: string}) => {
@@ -91,16 +85,18 @@ export const useLinkWallet = ({
       const signMessage = async () => {
         setIsSigning(true);
         try {
-          const { data: latestNonce } = await refetchNonce();
-          if (!latestNonce) throw new Error("Failed to retrieve latest nonce");
+          if (!address) throw new Error("Address is required");
+          const resolvedNonce = await talentAuthService.createNonce(address);
+          if (!resolvedNonce) throw new Error("Failed to retrieve latest nonce");
+          const checksumAddress = getAddress(address);
           const siwe = new SiweMessage({
             domain: window.location.host,
-            address,
+            address: checksumAddress,
             statement: "Sign in with Talent Protocol.",
             uri: window.location.origin,
             version: "1",
             chainId,
-            nonce: latestNonce,
+            nonce: resolvedNonce,
           });
           const messageString = siwe.prepareMessage();
           const signature = await signMessageAsync({ message: messageString });
@@ -124,7 +120,7 @@ export const useLinkWallet = ({
 
       signMessage();
     }
-  }, [isConnected, address, status, store, isSigning, refetchNonce, signMessageAsync, connectWallets, setAuthToken, onSuccess, onEnd, fullDisconnect, chainId]);
+  }, [isConnected, address, status, store, isSigning, signMessageAsync, connectWallets, setAuthToken, onSuccess, onEnd, fullDisconnect, chainId]);
 
   // Reset signing state when wallet disconnects
   useEffect(() => {
