@@ -240,7 +240,7 @@ function ApiKeysManagerContent(): React.ReactElement {
       )}
       <Dialog.Root open={isCreateOpen} onOpenChange={setIsCreateOpen}>
         <Dialog.Portal container={portalContainer ?? undefined}>
-          <Theme appearance="dark" style={{ backgroundColor: 'transparent' }}>
+          <Theme style={{ backgroundColor: 'transparent' }}>
             <Dialog.Overlay style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.5)', zIndex: 2000 }} />
             <Dialog.Content
             style={{
@@ -330,7 +330,7 @@ function ApiKeysManagerContent(): React.ReactElement {
       {/* Confirm Revoke Dialog */}
       <Dialog.Root open={!!confirmRevokeId} onOpenChange={(open) => { if (!open) setConfirmRevokeId(null); }}>
         <Dialog.Portal container={portalContainer ?? undefined}>
-          <Theme appearance="dark" style={{ backgroundColor: 'transparent' }}>
+          <Theme style={{ backgroundColor: 'transparent' }}>
             <Dialog.Overlay style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.5)', zIndex: 2000 }} />
             <Dialog.Content
               style={{
