@@ -6,6 +6,7 @@ import { wagmiAdapter, projectId, networks } from "../utils/wagmiUtils";
 import { AuthProvider } from "../contexts/AuthContext";
 import { Theme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css";
+import { useColorMode } from "@docusaurus/theme-common";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -47,6 +48,7 @@ createAppKit({
 });
 
 export function Providers({ children }: { children: React.ReactNode }) {
+  const { colorMode } = useColorMode();
   const themeStyle: React.CSSProperties = {
     ["--accent-9" as any]: "var(--ifm-color-primary)",
     ["--accent-10" as any]: "var(--ifm-color-primary-darker)",
@@ -62,7 +64,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
           projectId={projectId}
         >
           <AuthProvider>
-            <Theme appearance="dark" style={{ backgroundColor: 'transparent', ...themeStyle }}>{children}</Theme>
+            <Theme appearance={colorMode as any} style={{ backgroundColor: 'transparent', ...themeStyle }}>{children}</Theme>
           </AuthProvider>
         </AppKitProvider>
       </QueryClientProvider>
