@@ -7,6 +7,7 @@
 import "dotenv/config";
 
 import { themes as prismThemes } from "prism-react-renderer";
+import webpack from "webpack";
 // import { version } from "react";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -70,6 +71,20 @@ const config = {
   },
 
   plugins: [
+    function defineEnvPlugin() {
+      return {
+        name: "define-env-plugin",
+        configureWebpack() {
+          return {
+            plugins: [
+              new webpack.DefinePlugin({
+                'process.env.TALENT_PROTOCOL_API_KEY': JSON.stringify(process.env.TALENT_PROTOCOL_API_KEY || ''),
+              }),
+            ],
+          };
+        },
+      };
+    },
     "./plugins/docusaurus-plugin-gen-data-points",
     [
       "@docusaurus/plugin-content-pages",
@@ -182,8 +197,9 @@ const config = {
     "@docusaurus/theme-search-algolia",
   ],
 
+
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    /** @type {import('@docusaurus/types').ThemeConfig} */
     ({
       // Replace with your project's social card
       image: "img/talent-protocol-og-image.jpg",
