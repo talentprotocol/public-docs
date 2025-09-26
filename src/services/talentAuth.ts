@@ -30,7 +30,6 @@ export class TalentAuthService {
     }
 
     const data: NonceResponse = await response.json();
-    console.log("data", data);
     return data.nonce;
   }
 
@@ -46,7 +45,7 @@ export class TalentAuthService {
       body: JSON.stringify({
         address: address.toLowerCase(),
         signature,
-        chainId,
+        chain_id: chainId,
         siwe_message: siweMessage,
       }),
     });
