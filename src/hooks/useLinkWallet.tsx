@@ -8,7 +8,7 @@ import { useAccount, useSignMessage, useSwitchChain } from "wagmi";
 import { talentAuthService } from "../services/talentAuth";
 import { useAuth } from "../contexts/AuthContext";
 import { useFullDisconnect } from "./useFullDisconnect";
-import { SiweMessage } from "sign-in-with-ethereum";
+import { SiweMessage } from "siwe";
 import { getAddress } from "viem";
 
 const requiredChain = base;
