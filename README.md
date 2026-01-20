@@ -30,3 +30,8 @@ Again, a file that you might want to change, although unlikely, is [docs/develop
 ## Cloudflare
 
 There are some Page Rules defined in Cloudflare to support some redirections for the public docs. Visit them to understand what they do.
+
+---
+
+## Editor settings
+This repository enforces LF end-of-line and 2-space indentation via `.editorconfig` and `.gitattributes` to keep diffs clean across platforms.
