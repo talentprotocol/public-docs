@@ -43,7 +43,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: "https://docs2.talentprotocol.com",
+  url: "https://docs.talentprotocol.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -78,7 +78,9 @@ const config = {
           return {
             plugins: [
               new webpack.DefinePlugin({
-                'process.env.TALENT_PROTOCOL_API_KEY': JSON.stringify(process.env.TALENT_PROTOCOL_API_KEY || ''),
+                "process.env.TALENT_PROTOCOL_API_KEY": JSON.stringify(
+                  process.env.TALENT_PROTOCOL_API_KEY || "",
+                ),
               }),
             ],
           };
@@ -196,7 +198,6 @@ const config = {
     "@docusaurus/theme-mermaid",
     "@docusaurus/theme-search-algolia",
   ],
-
 
   themeConfig:
     /** @type {import('@docusaurus/types').ThemeConfig} */
