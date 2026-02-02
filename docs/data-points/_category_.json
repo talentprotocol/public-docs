@@ -2,9 +2,7 @@
   "label": "Data Points",
   "position": 3,
   "link": {
-    "type": "generated-index",
-    "title": "Data Points",
-    "slug": "/data-points",
-    "description": "Data Points that Talent Protocol keeps track of."
+    "type": "doc",
+    "id": "data-points/index"
   }
 }
