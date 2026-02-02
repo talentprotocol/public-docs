@@ -68,6 +68,19 @@ ${dataIssuer.description || `${dataIssuer.name} data points`}
             console.log(`Generated ${filePath}`);
           }
 
+          // Generate index.mdx file
+          const indexFilePath = path.join(outputDir, "index.mdx");
+          const indexContent = `---
+sidebar_position: 1
+---
+
+# Data Points
+
+Explore data indexed by Talent at [https://talent.app/~/data](https://talent.app/~/data).
+`;
+          fs.writeFileSync(indexFilePath, indexContent);
+          console.log(`Generated ${indexFilePath}`);
+
           console.log("✅ Generation complete!");
         });
       cli
@@ -80,7 +93,8 @@ ${dataIssuer.description || `${dataIssuer.name} data points`}
           if (fs.existsSync(outputDir)) {
             fs.readdirSync(outputDir).forEach((file) => {
               const filePath = path.join(outputDir, file);
-              if (filePath.endsWith(".mdx")) {
+              // Preserve index.mdx - don't delete it
+              if (filePath.endsWith(".mdx") && file !== "index.mdx") {
                 console.debug(`Removing file: ${filePath}`);
                 // Remove the file
                 fs.unlinkSync(filePath);
