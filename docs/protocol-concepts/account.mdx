@@ -6,7 +6,7 @@ sidebar_position: 2
 
 An Account represents a connection with a third-party data provider.
 
-An **Account** represents a connection with a third-party entity (e.g., Wallet Address, GitHub, X, LinkedIn) that feeds reputation data into Talent Protocol. Accounts can exist independently or be linked to a user.
+An **Account** represents a connection with a third-party entity (e.g., Wallet Address, GitHub, X, LinkedIn) that feeds reputation data into Talent. Accounts can exist independently or be linked to a user.
 
 A [**User**](/docs/protocol-concepts/user) represents an individual that signed up on talentprotocol.com to verify their reputation data and increase their [Builder Score](/docs/protocol-concepts/scoring-systems/builder-score), by connecting multiple [**accounts**](/docs/protocol-concepts/account)**.**
 
@@ -22,9 +22,9 @@ A [**User**](/docs/protocol-concepts/user) represents an individual that signed 
 
 ## Types of Accounts:
 
-- **Indexed Account**: All accounts being tracked by Talent Protocol, whether connected by users or imported automatically.
+- **Indexed Account**: All accounts being tracked by Talent, whether connected by users or imported automatically.
 
-- **Imported Account**: Public accounts indexed directly by Talent Protocol, without any explicit user action, such as curated wallet addresses or public GitHub profiles.
+- **Imported Account**: Public accounts indexed directly by Talent, without any explicit user action, such as curated wallet addresses or public GitHub profiles.
 
 - **Connected Account**: Accounts actively linked to a user’s profile and with verified ownership.
 
@@ -38,7 +38,7 @@ Accounts can come from various sources:
 - `lens`: Lens Protocol accounts
 - `x_twitter`: Twitter/X accounts
 - `linkedin`: Professional LinkedIn profiles
-- `talent_protocol`: Native Talent Protocol accounts
+- `talent_protocol`: Native Talent accounts
 - `worldcoin`: World ID verified accounts
 - `self`: Self-verified information
 
@@ -47,7 +47,7 @@ Accounts can come from various sources:
 - `identifier`: The unique identifier on the source platform
 - `source`: The platform or data provider (see Account Types)
 - `owned_since`: When the account was first created
-- `connected_at`: When the account was connected to Talent Protocol
+- `connected_at`: When the account was connected to Talent
 - `username`: The user-friendly name on the source platform
 
 ## Account Relationship to Profiles
@@ -58,7 +58,7 @@ Accounts can come from various sources:
 
 ## Accessing Account Data
 
-[API](/docs/developers/talent-api/api-reference) provides endpoints to:
+[API](/docs/talent-api/api-reference) provides endpoints to:
 
 - Retrieve accounts associated with a profile
 - Search profiles by account identifiers

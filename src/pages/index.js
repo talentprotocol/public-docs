@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <Layout
       title={`Home - ${siteConfig.title}`}
-      description="Talent Protocol Official Documentation. API, SDK and more.">
+      description="Talent Official Documentation. API, SDK and more.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

@@ -12,7 +12,7 @@ module.exports = function genDataPointsPlugin(context, options) {
       cli
         .command("gen-data-points-docs")
         .description(
-          "Fetch Talent Protocol Data Points documentation generate .mdx docs"
+          "Fetch Talent Data Points documentation generate .mdx docs"
         )
         .action(async () => {
           const outputDir = path.join(__dirname, "../../docs/data-points");
@@ -86,7 +86,7 @@ Explore data indexed by Talent at [https://talent.app/~/data](https://talent.app
       cli
         .command("clean-data-points-docs")
         .description(
-          "Remove Talent Protocol Data Points documentation .mdx docs"
+          "Remove Talent Data Points documentation .mdx docs"
         )
         .action(() => {
           const outputDir = path.join(__dirname, "../../docs/data-points");

@@ -1,0 +1,7 @@
+{
+  "position": 3,
+  "customProps": {
+    "autogenerate": false,
+    "sidebarFile": "./docs/talent-api/api-reference/sidebar.ts"
+  }
+}
