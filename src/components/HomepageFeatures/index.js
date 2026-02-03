@@ -4,17 +4,17 @@ import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: "Talent Protocol Official Documentation",
+    title: "Talent Official Documentation",
     svgSrc: require("@site/static/img/docs.svg").default,
     description: (
       <>
-        This is the official documentation for Talent Protocol, a platform
+        This is the official documentation for Talent, a platform
         designed to help individuals build and showcase their professional
         talents. Here, you will find comprehensive guides, tutorials, and
         resources to get started and make the most of the platform.
       </>
     ),
-    buttonHref: "/docs/developers/get-started",
+    buttonHref: "/docs/get-started",
     buttonLabel: "Get Started",
   },
 ];

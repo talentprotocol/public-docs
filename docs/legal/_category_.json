@@ -1,4 +1,5 @@
 {
   "label": "Legal",
-  "position": 4
+  "position": 5,
+  "className": "hide_item_from_sidebar"
 }

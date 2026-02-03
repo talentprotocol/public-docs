@@ -1,0 +1,52 @@
+---
+sidebar_position: 1
+pagination_prev: null
+slug: /
+---
+
+# Get Started
+
+Talent helps builders get rewarded by making their reputation more visible.
+
+We track builder activity across blockchains, GitHub, and other data sources, in order to rank real contributors.
+
+With Talent:
+
+- **Builders** get rewarded for shipping real apps
+- **Ecosystems** can reach and reward top builders
+- **Apps** can integrate verified reputation data with a single API call
+
+## What Can You Build?
+
+Check out [talent.app](https://talent.app) as the best example of using Talent data to showcase builder reputation.
+
+Use our API to add reputation-based context and authentication to your app, like [Basenames](https://x.com/TalentProtocol/status/1825995151275434439) and [Etherscan](https://x.com/TalentProtocol/status/1830974248363622607). You can also build search and discovery features to find top builders, or create custom scoring systems using our data primitives.
+
+## Quick Start
+
+1. [Get your API Key](/docs/api-keys)
+2. Explore our [API Reference](/docs/talent-api/api-reference)
+3. Jump into specific guides:
+   - [Authentication](/docs/talent-api/authentication)
+   - [Builder Score](/docs/talent-api/api-reference/get-a-specific-score-using-wallet-scorer-slug-talent-id-or-account-identifier)
+   - [Credentials](/docs/talent-api/api-reference/get-the-score-and-the-credentials-using-wallet-scorer-slug-talent-id-or-account-identifier)
+
+## Core Concepts
+
+Talent is built around the following core concepts to create a comprehensive reputation system:
+
+- [**Profile**](/docs/protocol-concepts/profile): The unified representation of a builder's identity and reputation data. A Profile can represent either a verified User or an independent Account.
+  - Users can have multiple connected Accounts feeding data into their Profile
+  - Independent Accounts have their own Profile until claimed by a User
+- [**User**](/docs/protocol-concepts/user): An individual who has signed up on one of our apps and verified their identity. Users can connect multiple Accounts.
+- [**Account**](/docs/protocol-concepts/account): A connection to a third-party data source (wallet, GitHub, X, etc.) that provides reputation data.
+- [**Data Point**](/docs/protocol-concepts/data-point): A specific verified fact about a builder (GitHub stars, wallet transactions, etc.).
+- [**Events**](/docs/protocol-concepts/event): Historical records of reputation changes
+- [**Score**](/docs/protocol-concepts/scoring-systems): A numerical measure of reputation calculated from Data Points using a specific Scoring System.
+
+## Support
+
+- Join our [Discord](https://discord.gg/talentprotocol) and [Farcaster](https://farcaster.xyz/~/channel/talent) for technical support
+- Follow [@TalentProtocol](https://twitter.com/TalentProtocol) for updates
+
+Ready to start building? Let's make great builders stand out together. 🫡
