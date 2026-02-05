@@ -1,48 +1,47 @@
-# Builder Score Levels
+# Builder Rank Tiers
 
-Breakdown of the 6 Builder Score Levels and implementation guidelines for developers.
+Understanding Builder Rank tiers and implementation guidelines for developers.
 
-Builder Score Levels provide a structured way to understand and interpret Builder Score values in the Talent ecosystem. These levels help both developers integrating our API and individual builders track progress and set goals.
+Builder Rank Tiers provide a structured way to understand and interpret Builder Ranks in the Talent ecosystem. These tiers help both developers integrating our API and individual builders track progress and set goals.
 
-## Understanding Builder Score Levels
+## Understanding Builder Rank Tiers
 
-Builder Score is an uncapped scoring system that measures a builder's verified reputation data across multiple categories. To make these scores more intuitive and actionable, we've established six distinct levels that represent increasing degrees of building activity and impact.
+Builder Ranks are a ranking system that measures a builder's verified reputation data across multiple categories. To make these rankings more intuitive and actionable, we've established distinct tiers based on percentile rankings that represent increasing degrees of building activity and impact.
 
-Each level corresponds to a specific Builder Score range:
+Each tier corresponds to a specific rank range:
 
-| Level | Name         | Score   | Range                                                                                                                        |
-| ----- | ------------ | ------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| 1     | Novice       | 0-39    | Just getting started with the basics. They've connected some accounts and taken their first steps as a builder.              |
-| 2     | Apprentice   | 40-79   | They're building sporadically and starting to make their mark. Their contributions are starting to get noticed.              |
-| 3     | Practitioner | 80-119  | They've established themselves as serious builders with real impact. Their work speaks for itself across multiple platforms. |
-| 4     | Advanced     | 120-169 | They've built some impressive things and contributed to notable projects. Their reputation is solid and growing.             |
-| 5     | Expert       | 170-249 | They're among the top builders with an exceptional track record. People look to their work as an example.                    |
-| 6     | Master       | 250+    | They're one of the most accomplished builders in the ecosystem with contributions that have made a real difference.          |
+| Tier | Name         | Rank Range  | Description                                                                                                                        |
+| ---- | ------------ | ----------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| 1    | Novice       | Top 100,000 | Just getting started with the basics. They've connected some accounts and taken their first steps as a builder.                    |
+| 2    | Apprentice   | Top 50,000  | They're building sporadically and starting to make their mark. Their contributions are starting to get noticed.                    |
+| 3    | Practitioner | Top 10,000  | They've established themselves as serious builders with real impact. Their work speaks for itself across multiple platforms.       |
+| 4    | Advanced     | Top 5,000   | They've built some impressive things and contributed to notable projects. Their reputation is solid and growing.                   |
+| 5    | Expert       | Top 1,000   | They're among the top builders with an exceptional track record. People look to their work as an example.                          |
+| 6    | Master       | Top 100     | They're one of the most accomplished builders in the ecosystem with contributions that have made a real difference.                |
 
 ## Use Cases
 
-- **Base**: Offers discounted Basename registrations for builders at Level 3 (Practitioner) or higher
-- **Hackathons:** Prioritizes hackathon applications from builders at Level 4 (Advanced) or higher
-- **Communities**: Automatically approves membership for builders at Level 2 (Apprentice) or higher
+- **Hackathons:** Prioritizes hackathon applications from builders ranked in the top 5,000 (Distinguished tier) or higher
+- **Communities**: Automatically approves membership for builders ranked in the top 50,000 (Rising tier) or higher
 
 ## Implementation Guide
 
-When integrating Builder Score into your app or protocol, you can use these levels to:
+When integrating Builder Ranks into your app or protocol, you can use these tiers to:
 
-- **Access Control**: Gate specific features or capabilities based on Builder Score Levels
+- **Access Control**: Gate specific features or capabilities based on Builder Rank Tiers
 - **User Segmentation**: Create targeted experiences for different builder segments
-- **Reward Distribution**: Allocate rewards or incentives proportionally to builder levels
-- **Interface Design**: Visually represent levels with badges or other UI elements
+- **Reward Distribution**: Allocate rewards or incentives proportionally to builder tiers
+- **Interface Design**: Visually represent tiers with badges or other UI elements
 - **Governance Rights**: Allocate voting weight or proposal rights
-- **Recommended Level Requirements:**
+- **Recommended Tier Requirements:**
 
-- General access and basic features: Level 1 (Novice)
-- Premium features and moderate incentives: Level 3 (Practitioner)
-- Exclusive access and significant incentives: Level 5 (Expert)
+- General access and basic features: Tier 1 (Emerging - Top 100,000)
+- Premium features and moderate incentives: Tier 3 (Established - Top 10,000)
+- Exclusive access and significant incentives: Tier 5 (Elite - Top 1,000)
 
-## Onchain Level Badges
+## Onchain Tier Badges
 
-Builders will be able to mint achievement badges for each Builder Score Level they reach. These badges:
+Builders will be able to mint achievement badges for each Builder Rank Tier they reach. These badges:
 
 - Serve as permanent proof of achievement
 - Can be displayed on profiles across the web3 ecosystem
@@ -51,7 +50,7 @@ Builders will be able to mint achievement badges for each Builder Score Level th
 
 ## Important Notes
 
-- **Absolute Values**: Builder Score Levels are based on absolute score values, not percentile ranks.
-- **Forward Evolution**: As our protocol adds more data points and users, the distribution of levels will naturally evolve.
-- **Periodic Review**: We review and may adjust level ranges periodically to maintain meaningful separation between tiers.
-- **Non-Decay**: Once you've minted a level badge, it remains in your collection even if your Builder Score temporarily decreases.
+- **Percentile-Based**: Builder Rank Tiers are based on percentile rankings, meaning your position relative to other builders in the ecosystem.
+- **Dynamic Rankings**: As more builders join the ecosystem and contribute, rankings will naturally shift. Maintaining your tier requires continued engagement and contributions.
+- **Periodic Review**: We review and may adjust tier thresholds periodically to maintain meaningful separation between tiers as the ecosystem grows.
+- **Badge Permanence**: Once you've minted a tier badge, it remains in your collection even if your Builder Rank temporarily changes.

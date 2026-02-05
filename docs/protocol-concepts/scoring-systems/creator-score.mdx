@@ -1,100 +1,22 @@
 # Creator Score
 
-A scoring system that identifies talent in content creation and creative contribution.
+The Creator Score is a scoring system available through the Talent API that evaluates content creation activity and creative contributions.
 
-## What is the Creator Score?
+## Overview
 
-Creator Score is a numerical value that represents a user's reputation as a content creator based on verified data across multiple platforms. Unlike traditional metrics that only consider follower count, Creator Score evaluates both quantity AND quality of creative output through verifiable signals.
+Creator Score is one of several scoring systems available in the Talent Protocol ecosystem. It provides a numerical representation of a user's creative activity based on verified data from connected platforms and accounts.
 
-The Creator Score is designed to:
+The score takes into account various aspects of content creation, including:
 
-- Help authentic creators gain recognition based on their actual contributions
-- Provide protocols, brands, and platforms with reliable data to identify top creative talent
-- Create a standardized measurement for creative impact and consistency
-- Reward consistent, high-quality content creation over mere popularity
+- **Creation activity**: Content publishing frequency and consistency
+- **Engagement metrics**: Audience size and interaction across platforms
+- **Economic signals**: Monetization and earnings from creative work
 
-## Who is a Creator?
+## Accessing Creator Score Data
 
-While Builder Score focuses on software development, Creator Score targets those who share original content consistently. A creator is someone that produces creative output (text, image, video, audio, interactive) that provides value to others by informing, educating, entertaining, or inspiring.
+Creator Score data is available through the Talent API:
 
-The Creator Score supports various creator types:
+- **[Advanced Search endpoint](/docs/talent-api/api-reference/search-for-profiles)**: Filter and search profiles with Creator Score data
+- **[Score endpoint](/docs/talent-api/api-reference/get-a-specific-score-using-wallet-scorer-slug-talent-id-or-account-identifier)**: Retrieve specific scoring information for profiles
 
-- **Visual Artists**: Illustrators, photographers, painters, graphic designers, animators
-- **Writers**: Bloggers, journalists, essayists, poets, newsletter authors
-- **Audio Creators**: Musicians, podcasters, sound designers, voice artists
-- **Video Creators**: Filmmakers, vloggers, streamers, YouTube content producers
-- **Community & Memes**: KOLs, meme artists, community builders
-
-## Use Cases
-
-Creator Score serves multiple purposes in the ecosystem:
-
-- **For creators**: Objective verification of creative impact that can be shared across platforms
-- **For protocols**: Reliable method to identify authentic creators for rewards, grants, and partnerships
-- **For brands**: Data-driven discovery of talent for collaborations and sponsorships
-- **For apps**: Enhanced context about users' creative contributions and reputation
-
-## The "Creator Score" Scoring Framework
-
-The Creator Score uses the same technical framework as the [Builder Score](/docs/protocol-concepts/scoring-systems/builder-score) but with [data points](/docs/protocol-concepts/data-point) specifically relevant to creators. The final score is the sum of all data point scores with no maximum cap, and each data point is evaluated based on: signal strength, max score, multiplier (not publicly disclosed), value conversion (optional).
-
-### **Signal Strength**
-
-- The first step is defining how strongly a given data point signals someone is a real creator
-- There's 3 possible levels:
-  - **Strong**: Up to 40 points (e.g., zora rewards earned)
-  - **Medium**: Up to 20 points (e.g., farcaster followers)
-  - **Weak**: Up to 8 points (e.g., twitter account age)
-
-### **Max Score**
-
-- Maximum amount of points each data point can contribute to the Creator Score, based on the signal strength
-
-### **Multiplier**
-
-- Each data point has a multiplier to convert its readable value into points
-- The multiplier is not publicly disclosed to prevent gaming (same approach as Builder Score)
-- Example: for twitter followers, if the multiplier is 0.01 and I have 1,000 followers, I will receive 10 points
-
-### **Value Conversion**
-
-- Some data point original values are converted to normalized metrics.
-- Example: We us a square root function for metrics like total followers or NFT earnings to prevent large creators from completely dominating
-
-## Creator Score Levels
-
-Similar to Builder Score, Creator Score is organized into levels to help users understand their standing:
-
-| Level | Score Range | Description                                                                            |
-| ----- | ----------- | -------------------------------------------------------------------------------------- |
-| 1     | 0-39        | Just getting started. Has created some content and taken first steps as a creator.     |
-| 2     | 40-79       | Creating content regularly with growing engagement. Beginning to build an audience.    |
-| 3     | 80-119      | Established creator with consistent output and meaningful engagement across platforms. |
-| 4     | 120-169     | Accomplished creator with significant audience and proven monetization.                |
-| 5     | 170-249     | Top-tier creator with substantial influence and recognition in their domain.           |
-| 6     | 250+        | Elite creator with exceptional impact, audience, and earnings.                         |
-
-## Key Metrics
-
-The Creator Score considers various metrics organized into three categories:
-
-### 1. Creation Metrics
-
-- Content Published - total number of content pieces published
-- Content Frequency - number of unique pieces published per week/month
-- Publishing Streak - consecutive weeks/months with published content
-- Creative Longevity - time since first published content
-
-### 2. Engagement Metrics
-
-- Followers and subscriber counts across platforms
-- Follower-to-following ratio
-- Engagement rates and interactions with content
-
-### 3. Economic Metrics
-
-- Total earnings and rewards
-- Unique holders/collectors/paid subscribers
-- NFT mints, coin purchases or price
-- Secondary market activity (NFT/coin trading)
-- Collector loyalty/repeat engagement
+For more information about the Talent API and how to access scoring data, see the [API Reference](/docs/talent-api/api-reference).

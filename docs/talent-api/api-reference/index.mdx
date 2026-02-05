@@ -6,9 +6,9 @@ The Talent API provides comprehensive access to verified builder reputation data
 
 ## Key Improvements
 
-- **Advanced Search**: Filter profiles by multiple criteria including tags, scores, and human verification status
+- **Advanced Search**: Filter profiles by multiple criteria including tags, ranks, and human verification status
 - **Profile-Centric Design**: Streamlined endpoints organized around Profiles as the central entity
-- **Multiple Scoring Systems**: Support for Builder Score and other upcoming scores
+- **Multiple Ranking Systems**: Support for Builder Ranks and other upcoming ranking systems
 - **Consistent Responses**: Standardized response formats across all endpoints
 - **Improved Pagination**: Options for both page-based and cursor-based pagination
 
@@ -22,9 +22,9 @@ Base URL: `https://api.talentprotocol.com/`
 
 - [**Profile Search**](/docs/talent-api/api-reference/search-for-profiles): `/search/advanced/profiles` - Find profiles matching specific criteria
 - [**Profile Data**](/docs/talent-api/api-reference/get-a-profile-using-wallet-talent-id-or-account-identifier): `/profile` - Get profile information by ID or account identifier
-- [**Score Data**](/docs/talent-api/api-reference/get-a-specific-score-using-wallet-scorer-slug-talent-id-or-account-identifier): `/score` - Get Builder Score and other scoring information
-- [**Farcaster Scores**](/docs/talent-api/api-reference/get-the-score-of-farcaster-accounts): `/farcaster/scores` - Get the Builder Score of Farcaster users
-- [**Credentials Data**](/docs/talent-api/api-reference/get-the-score-and-the-credentials-using-wallet-scorer-slug-talent-id-or-account-identifier): `/credentials` - Get the points each data point contributed to the Builder Score
+- [**Score Data**](/docs/talent-api/api-reference/get-a-specific-score-using-wallet-scorer-slug-talent-id-or-account-identifier): `/score` - Get Builder Rank and other ranking information (endpoint returns ranking data including rank position)
+- [**Farcaster Scores**](/docs/talent-api/api-reference/get-the-score-of-farcaster-accounts): `/farcaster/scores` - Get the Builder Rank of Farcaster users
+- [**Credentials Data**](/docs/talent-api/api-reference/get-the-score-and-the-credentials-using-wallet-scorer-slug-talent-id-or-account-identifier): `/credentials` - Get the points each data point contributed to the ranking calculation
 - [**Data Points**](https://talent.app/~/data): `/data_points` - Get the data points providing a list of slugs and for a Talent profile
 - [**Account Data**](/docs/talent-api/api-reference/get-account-using-wallet-talent-id-or-account-identifier): `/accounts` - Get connected accounts information
 - [**Social Data**](/docs/talent-api/api-reference/get-socials-using-wallet-talent-id-or-account-identifier): `/socials` - Get connected social media information
