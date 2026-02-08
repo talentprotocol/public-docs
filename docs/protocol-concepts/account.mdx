@@ -8,7 +8,7 @@ An Account represents a connection with a third-party data provider.
 
 An **Account** represents a connection with a third-party entity (e.g., Wallet Address, GitHub, X, LinkedIn) that feeds reputation data into Talent. Accounts can exist independently or be linked to a user.
 
-A [**User**](/docs/protocol-concepts/user) represents an individual that signed up on talentprotocol.com to verify their reputation data and improve their [Builder Ranks](/docs/protocol-concepts/scoring-systems/builder-score), by connecting multiple [**accounts**](/docs/protocol-concepts/account)**.**
+A [**User**](/docs/protocol-concepts/user) represents an individual that signed up on talentprotocol.com to verify their reputation data and improve their [Builder Rank](/docs/protocol-concepts/scoring-systems/builder-score), by connecting multiple [**accounts**](/docs/protocol-concepts/account)**.**
 
 ## Key Attributes:
 
@@ -16,8 +16,8 @@ A [**User**](/docs/protocol-concepts/user) represents an individual that signed 
   - `talentprotocol.com/address/0xbd…23d4`
   - `talentprotocol.com/github/filmacedo`
 - If linked to a user, the account URL will automatically redirect to the user’s profile URL. Otherwise, it will show the data from that imported account independently.
-- Once linked to a user, an account loses its independent profile and redirect to the user's profile. The account also loses its [Builder Ranks](/docs/protocol-concepts/scoring-systems/builder-score), and its data feeds into the user's aggregated reputation.
-- Accounts display their own [Builder Ranks](/docs/protocol-concepts/scoring-systems/builder-score) unless linked to a user, at which point their data integrates into the user's aggregated [Builder Ranks](/docs/protocol-concepts/scoring-systems/builder-score).
+- Once linked to a user, an account loses its independent profile and redirect to the user's profile. The account also loses its [Builder Rank](/docs/protocol-concepts/scoring-systems/builder-score), and its data feeds into the user's aggregated reputation.
+- Accounts display their own [Builder Rank](/docs/protocol-concepts/scoring-systems/builder-score) unless linked to a user, at which point their data integrates into the user's aggregated [Builder Rank](/docs/protocol-concepts/scoring-systems/builder-score).
 - Users can claim an imported account by verifying ownership (e.g., signing a wallet message, connecting GitHub).
 
 ## Types of Accounts:
