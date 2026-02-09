@@ -1,0 +1,39 @@
+# Builder Rank
+
+A ranking system to recognize real onchain builders.
+
+## What is Builder Rank?
+
+Builder Rank is a ranking system that represents a user's position relative to other builders, based on verified activity and impact.
+
+Builder Rank aims to distinguish builders from other types of crypto users, by valuing both the quantity and quality of their contributions. It reflects both "potential" (future growth) and "achievements" (proven track record).
+
+Users can leverage their Builder Rank within Talent's growing partner ecosystem, while developers can easily add Builder Rank to their apps.
+
+Apps like [Basenames](https://x.com/TalentProtocol/status/1825995151275434439) or [Etherscan](https://x.com/TalentProtocol/status/1830974248363622607) already integrate with Builder Rank to bring more context to their users and to curate the best builders in crypto.
+
+## How Builder Rank Works
+
+Builder Rank is determined by your position relative to other builders. It is calculated from verified [Data Points](/docs/protocol-concepts/data-point) collected from your connected accounts, such as:
+
+- GitHub contributions and repositories
+- Onchain transactions and contract deployments
+- Hackathon participation and wins
+- Social presence (Farcaster, Twitter/X)
+
+Each Data Point is evaluated based on how strongly it signals real building activity. The exact formula is not disclosed to prevent gaming.
+
+:::warning
+
+Builder Rank is still experimental, so expect regular updates to the ranking algorithm.
+
+:::
+
+## Accessing Builder Rank
+
+You can retrieve a builder's rank via the Talent API:
+
+- [**Rank endpoint**](/docs/talent-api/api-reference/get-a-specific-score-using-wallet-scorer-slug-talent-id-or-account-identifier): Get a builder's rank by wallet address, Talent ID, or account identifier
+- [**Profile search**](/docs/talent-api/api-reference/search-for-profiles): Search and filter profiles by rank
+
+Builder Rank doesn't have a maximum cap, so rankings evolve over time as more builders join and more data sources are added.
