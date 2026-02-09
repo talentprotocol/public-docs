@@ -1,0 +1,20 @@
+# Ranking Systems
+
+A Ranking System evaluates verified [Data Points](/docs/protocol-concepts/data-point) to determine a user's position relative to others in a specific domain.
+
+Under the hood, each ranking system uses an internal scoring algorithm to convert Data Points into a final rank. The scores themselves are not exposed — only the resulting rank is made available through the API.
+
+Talent intentionally separates Data Points (objective data) from Ranking Systems (subjective evaluation). Both are autonomous and composable protocol primitives.
+
+## Available Ranking Systems
+
+Multiple ranking systems can exist in parallel, each designed to evaluate talent in a specific domain:
+
+- [Builder Rank](/docs/protocol-concepts/ranking-systems/builder-rank) identifies and ranks people creating software
+- Other ranking systems coming soon
+
+Each ranking system operates independently with its own set of relevant Data Points, tailored to what matters for their specific persona.
+
+This modular approach allows Talent to serve different communities with metrics that genuinely reflect their unique contributions, rather than forcing diverse talents into the same box.
+
+Reach out if you want to create a custom ranking system.
