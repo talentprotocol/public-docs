@@ -10,7 +10,16 @@ The API key is the entry point for the Talent API. In order to perform requests 
 
 We use the header `X-API-KEY` to retrieve the access key and validate your access to our API.
 
-There're two types of API keys:
+There are two types of API key permissions:
 
 - `read_only`: Can only access GET requests
 - `write`: Can access all requests
+
+### Tiers
+
+API keys are assigned one of two tiers:
+
+- **Free**: Default tier. Limited to 5,000 requests/month.
+- **Enterprise**: Unlimited requests.
+
+See [Rate Limits](/docs/talent-api/rate-limits) for details on usage tracking and headers.
