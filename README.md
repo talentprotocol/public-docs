@@ -1,8 +1,8 @@
-# Talent Protocol Public Docs
+# Talent Public Docs
 
 ## How to Update Docs
 
-You'll need to have a `.env` file with a `TALENT_PROTOCOL_API_KEY` as access to the Talent Protocol API is required to auto-generate some of the documentation. Any working key will work, you can grab one from our [developer page](https://app.talentprotocol.com/developers).
+You'll need to have a `.env` file with a `TALENT_PROTOCOL_API_KEY` as access to the Talent API is required to auto-generate some of the documentation. Any working key will work, you can grab one from our [Talent profile](https://talent.app/~/settings/api) – exclusive for Talent+ members.
 
 ### Data Points
 
