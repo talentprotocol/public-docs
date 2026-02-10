@@ -4,9 +4,53 @@ sidebar_position: 4
 
 # Rate Limits
 
-## Rate Limits
+## Tiers
 
-Talent API usage is limited to 5,000 requests/month.
+API keys have two tiers with different usage limits:
+
+| Tier | Monthly Limit | Description |
+|------|--------------|-------------|
+| **Free** | 5,000 requests | Default tier for all new API keys |
+| **Enterprise** | Unlimited | Unlimited access |
+
+- Once the limit is reached, the API will block further requests with a `401` response.
+- Usage counters reset automatically at the beginning of each month.
+
+## Usage Headers
+
+Every successful response for **free tier** API keys includes the following headers:
+
+| Header | Description |
+|--------|-------------|
+| `X-API-Usage-Current` | Number of requests made in the current month |
+| `X-API-Usage-Limit` | Monthly request limit (5,000) |
+| `X-API-Usage-Status` | Current status: `ok`, `warning`, or `exceeded` |
+
+Enterprise tier keys do not receive these headers.
+
+## Usage Endpoint
+
+You can check your API key's usage details at any time, even if your key has exceeded the limit:
+
+```
+GET /api_keys/usage
+```
+
+Pass your API key via the `X-API-KEY` header. The response includes:
+
+```json
+{
+  "api_key_id": "uuid",
+  "tier": "free",
+  "current_usage": 150,
+  "limit": 5000,
+  "usage_status": "ok",
+  "period": "2026-02",
+  "resets_at": "2026-03-01T00:00:00Z"
+}
+```
+
+For enterprise keys, `current_usage` and `limit` will be `null`, and `usage_status` will be `unlimited`.
 
 ## Fair Use Policy
 
