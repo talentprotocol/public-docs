@@ -32,7 +32,6 @@
     "@radix-ui/themes": "^3.2.1",
     "@reown/appkit": "^1.8.4",
     "@reown/appkit-adapter-wagmi": "^1.8.4",
-    "viem": "^2.21.15",
     "clsx": "^2.1.1",
     "docusaurus-plugin-openapi-docs": "^4.4.0",
     "docusaurus-theme-openapi-docs": "^4.4.0",
@@ -40,11 +39,18 @@
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "siwe": "^3.0.0"
+    "siwe": "^3.0.0",
+    "viem": "^2.21.15"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.8.1",
-    "@docusaurus/types": "^3.8.1"
+    "@docusaurus/types": "^3.8.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/jest": "^30.0.0",
+    "jest": "^30.4.2",
+    "jest-environment-jsdom": "^30.4.1",
+    "ts-jest": "^29.4.10"
   },
   "browserslist": {
     "production": [
